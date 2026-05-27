@@ -1,0 +1,25 @@
+<!--logs.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <!-- 直接物品列表 -->
+  <view class="items-grid" wx:if="{{items.length > 0}}">
+    <view class="item-cell" wx:for="{{items}}" wx:key="name">
+      <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
+      <text class="item-name">{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 子分类 -->
+  <block wx:if="{{subCategories.length > 0}}">
+    <view wx:for="{{subCategories}}" wx:key="name" wx:for-item="sub" class="sub-section">
+      <view class="sub-header" wx:if="{{sub.image}}">
+        <image class="sub-icon" src="{{sub.image}}" mode="aspectFit" />
+      </view>
+      <view class="items-grid">
+        <view class="item-cell" wx:for="{{sub.items}}" wx:key="name">
+          <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
+          <text class="item-name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
