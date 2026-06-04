@@ -1,0 +1,94 @@
+<!--cooking.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="section-title">
+    <text class="section-title-text">食谱</text>
+  </view>
+
+  <!-- 食谱网格 -->
+  <view class="dishes-grid">
+    <view class="dish-cell" wx:for="{{dishes}}" wx:key="name" bindtap="onDishTap" data-index="{{index}}">
+      <image class="dish-icon" src="{{item.icon || item.image}}" mode="aspectFit" />
+      <text class="dish-name">{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 食谱详情弹窗 -->
+  <view class="popup-mask" wx:if="{{showPopup}}" bindtap="closePopup">
+    <scroll-view class="popup-container" scroll-y catchtap="">
+      <!-- 名称 -->
+      <view class="popup-header">
+        <text class="popup-title">{{popupDish.name}}</text>
+      </view>
+
+      <!-- 大图 -->
+      <view class="popup-image-wrap">
+        <image class="popup-image" src="{{popupDish.image}}" mode="aspectFit" />
+        <image class="popup-icon-img" src="{{popupDish.icon}}" mode="aspectFit" wx:if="{{popupDish.icon}}" />
+      </view>
+
+      <!-- 食物属性 -->
+      <view class="popup-section-header">
+        <text class="popup-section-title">食物</text>
+      </view>
+      <view class="food-stats-row">
+        <view class="food-stat">
+          <image class="food-stat-icon" src="{{popupDish.food_stats.hunger.image}}" mode="aspectFit" />
+          <text class="food-stat-val">{{popupDish.food_stats.hunger.value}}</text>
+        </view>
+        <view class="food-stat">
+          <image class="food-stat-icon" src="{{popupDish.food_stats.health.image}}" mode="aspectFit" />
+          <text class="food-stat-val">{{popupDish.food_stats.health.value}}</text>
+        </view>
+        <view class="food-stat">
+          <image class="food-stat-icon" src="{{popupDish.food_stats.sanity.image}}" mode="aspectFit" />
+          <text class="food-stat-val">{{popupDish.food_stats.sanity.value}}</text>
+        </view>
+      </view>
+      <!-- 烹饪条件 -->
+      <view class="popup-section-header">
+        <text class="popup-section-title">烹饪条件</text>
+      </view>
+      <view class="cook-info">
+        <view class="cook-req-row">
+          <text class="cook-req-tag" wx:for="{{popupDish.attribute_requirements}}" wx:key="*this">{{item}}</text>
+          <view class="special-req" wx:if="{{popupDish.special_requirement}}">
+            <block wx:for="{{popupDish.special_requirement.items}}" wx:key="name">
+              <image class="special-req-icon" src="{{item.image}}" mode="aspectFit" />
+              <text class="special-req-name">{{item.name}}</text>
+            </block>
+            <text class="special-req-cond">{{popupDish.special_requirement.condition}}</text>
+          </view>
+        </view>
+        <view class="cook-info-row">
+          <text class="cook-info-sub">保质期：{{popupDish.spoilage}}</text>
+          <text class="cook-info-sub">烹饪时间：{{popupDish.cook_time}}</text>
+        </view>
+      </view>
+
+      <!-- 烹饪范例 -->
+      <block wx:if="{{popupDish.cooking_examples.length > 0}}">
+        <view class="popup-section-header">
+          <text class="popup-section-title">烹饪范例</text>
+        </view>
+        <view class="examples-list">
+          <view class="example-row" wx:for="{{popupDish.cooking_examples}}" wx:key="index" wx:for-item="example">
+            <view class="example-ingredients">
+              <view class="example-ing" wx:for="{{example}}" wx:key="name" wx:for-item="ing">
+                <image class="example-ing-icon" src="{{ing.image}}" mode="aspectFit" />
+              </view>
+            </view>
+            <text class="example-arrow">▶</text>
+            <view class="example-result">
+              <image class="example-result-icon" src="{{popupDish.icon || popupDish.image}}" mode="aspectFit" />
+            </view>
+          </view>
+        </view>
+      </block>
+
+      <!-- 关闭 -->
+      <view class="popup-close" bindtap="closePopup">
+        <text class="popup-close-text">关闭</text>
+      </view>
+    </scroll-view>
+  </view>
+</scroll-view>

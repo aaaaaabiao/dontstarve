@@ -18,6 +18,19 @@
     <text class="section-title-text">{{selectedName}}</text>
   </view>
 
+  <!-- 子分类图标行 -->
+  <view class="sub-category-row" wx:if="{{subCategories.length > 0}}">
+    <view
+      class="sub-category-item {{selectedSubIndex === index ? 'sub-active' : ''}}"
+      wx:for="{{subCategories}}"
+      wx:key="image"
+      bindtap="onSubCategoryTap"
+      data-index="{{index}}"
+    >
+      <image class="sub-category-icon" src="{{item.image}}" mode="aspectFit" />
+    </view>
+  </view>
+
   <!-- 物品列表 -->
   <scroll-view class="items-scroll" scroll-y wx:if="{{items.length > 0}}">
     <view class="items-grid">
@@ -26,23 +39,6 @@
         <text class="item-name">{{item.name}}</text>
       </view>
     </view>
-  </scroll-view>
-
-  <!-- 子分类物品列表 -->
-  <scroll-view class="items-scroll" scroll-y wx:if="{{subCategories.length > 0}}">
-    <block wx:for="{{subCategories}}" wx:key="image" wx:for-item="sub">
-      <view class="sub-section">
-        <view class="sub-header" wx:if="{{sub.image}}">
-          <image class="sub-icon" src="{{sub.image}}" mode="aspectFit" />
-        </view>
-        <view class="items-grid">
-          <view class="item-cell {{selectedItem === item.name ? 'item-active' : ''}}" wx:for="{{sub.items}}" wx:key="name" bindtap="onItemTap" data-name="{{item.name}}">
-            <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
-            <text class="item-name">{{item.name}}</text>
-          </view>
-        </view>
-      </view>
-    </block>
   </scroll-view>
 
   <!-- 合成配方信息 -->
@@ -55,7 +51,7 @@
       <!-- 材料 > 产物 -->
       <view class="recipe-craft">
         <view class="recipe-ingredients">
-          <view class="ingredient" wx:for="{{recipe.ingredients}}" wx:key="name" wx:for-item="ing">
+          <view class="ingredient" wx:for="{{recipe.ingredients}}" wx:key="name" wx:for-item="ing" bindtap="onIngredientTap" data-name="{{ing.name}}">
             <image class="ingredient-icon" src="{{ing.image}}" mode="aspectFit" />
             <text class="ingredient-qty">{{ing.quantity}}</text>
           </view>
@@ -82,5 +78,85 @@
         </view>
       </view>
     </view>
+  </view>
+
+  <!-- 物品详情弹窗 -->
+  <view class="popup-mask" wx:if="{{showPopup}}" bindtap="closePopup">
+    <scroll-view class="popup-container" scroll-y catchtap="">
+      <!-- 物品名称 + 图片 -->
+      <view class="popup-header">
+        <text class="popup-title">{{popupItem.name}}</text>
+      </view>
+      <view class="popup-image-wrap">
+        <image class="popup-image" src="{{popupItem.image}}" mode="aspectFit" />
+        <image class="popup-icon" src="{{popupItem.icon}}" mode="aspectFit" wx:if="{{popupItem.icon}}" />
+      </view>
+
+      <!-- 制作配方 -->
+      <block wx:if="{{popupItem.recipes.length > 0}}">
+        <view class="popup-section-header">
+          <text class="popup-section-title">制作配方</text>
+        </view>
+        <view wx:for="{{popupItem.recipes}}" wx:key="name" wx:for-item="pr">
+          <view class="popup-recipe-craft">
+            <view class="popup-ingredients">
+              <view class="popup-ing" wx:for="{{pr.ingredients}}" wx:key="name" wx:for-item="pi" bindtap="onPopupIngredientTap" data-name="{{pi.name}}">
+                <image class="popup-ing-icon" src="{{pi.image}}" mode="aspectFit" />
+                <text class="popup-ing-qty">{{pi.quantity}}</text>
+              </view>
+            </view>
+            <text class="popup-recipe-arrow">▶</text>
+            <view class="popup-ing">
+              <image class="popup-ing-icon" src="{{popupItem.icon || popupItem.image}}" mode="aspectFit" />
+              <text class="popup-ing-qty">1</text>
+            </view>
+          </view>
+          <text class="popup-recipe-desc" wx:if="{{pr.description}}">"{{pr.description}}"</text>
+          <view class="popup-recipe-meta">
+            <view class="popup-meta-item" wx:if="{{pr.category}}">
+              <text class="popup-meta-label">分类</text>
+              <image class="popup-meta-icon" src="{{pr.category.image}}" mode="aspectFit" />
+            </view>
+            <view class="popup-meta-item" wx:if="{{pr.crafting_station}}">
+              <text class="popup-meta-label">制作站</text>
+              <image class="popup-meta-icon" src="{{pr.crafting_station.image}}" mode="aspectFit" />
+            </view>
+          </view>
+          <text class="popup-unlock" wx:if="{{pr.unlock}}">({{pr.unlock.name}})</text>
+          <text class="popup-unlock" wx:elif="{{!pr.unlock}}">（无法解锁配方）</text>
+        </view>
+      </block>
+
+      <!-- 掉落自 -->
+      <block wx:if="{{popupItem.drop_from.length > 0}}">
+        <view class="popup-section-header">
+          <text class="popup-section-title">掉落自</text>
+        </view>
+        <view class="popup-source-grid">
+          <view class="popup-source-item" wx:for="{{popupItem.drop_from}}" wx:key="name">
+            <image class="popup-source-icon" src="{{item.image}}" mode="aspectFit" />
+            <text class="popup-source-name">{{item.name}}</text>
+          </view>
+        </view>
+      </block>
+
+      <!-- 生成自 -->
+      <block wx:if="{{popupItem.generated_from.length > 0}}">
+        <view class="popup-section-header">
+          <text class="popup-section-title">生成自</text>
+        </view>
+        <view class="popup-source-grid">
+          <view class="popup-source-item" wx:for="{{popupItem.generated_from}}" wx:key="name">
+            <image class="popup-source-icon" src="{{item.image}}" mode="aspectFit" />
+            <text class="popup-source-name">{{item.name}}</text>
+          </view>
+        </view>
+      </block>
+
+      <!-- 关闭按钮 -->
+      <view class="popup-close" bindtap="closePopup">
+        <text class="popup-close-text">关闭</text>
+      </view>
+    </scroll-view>
   </view>
 </scroll-view>

@@ -1,6 +1,6 @@
 // index.ts
 import { categories } from '../../data/categories'
-import { recipes } from '../../data/recipes'
+import { itemsMap } from '../../data/items'
 
 Component({
   data: {
@@ -9,9 +9,12 @@ Component({
     selectedName: '',
     items: [] as any[],
     subCategories: [] as any[],
+    selectedSubIndex: -1,
     selectedItem: '',
     selectedItemImage: '',
     recipeList: [] as any[],
+    showPopup: false,
+    popupItem: null as any,
   },
   lifetimes: {
     attached() {
@@ -29,6 +32,7 @@ Component({
         selectedName: category.name,
         items: [],
         subCategories: [],
+        selectedSubIndex: -1,
         selectedItem: '',
         selectedItemImage: '',
         recipeList: [],
@@ -43,23 +47,63 @@ Component({
       this.setData(data)
     },
 
+    onSubCategoryTap(e: any) {
+      const index = e.currentTarget.dataset.index
+      const sub = this.data.subCategories[index]
+      if (!sub) return
+      this.setData({
+        selectedSubIndex: index,
+        items: sub.items || [],
+        selectedItem: '',
+        selectedItemImage: '',
+        recipeList: [],
+      })
+    },
+
     onItemTap(e: any) {
       const name = e.currentTarget.dataset.name
-      const recipeList = recipes[name] || []
+      const item = itemsMap[name]
+      const recipeList = item ? item.recipes : []
 
       let itemImage = ''
-      const allItems = [
-        ...this.data.items,
-        ...this.data.subCategories.reduce((acc: any[], sub: any) => acc.concat(sub.items || []), [])
-      ]
-      const found = allItems.find((it: any) => it.name === name)
-      if (found) itemImage = found.image
+      if (item) {
+        itemImage = item.image
+      } else {
+        const allItems = [
+          ...this.data.items,
+          ...this.data.subCategories.reduce((acc: any[], sub: any) => acc.concat(sub.items || []), [])
+        ]
+        const found = allItems.find((it: any) => it.name === name)
+        if (found) itemImage = found.image
+      }
 
-      this.setData({
-        selectedItem: name,
-        selectedItemImage: itemImage,
-        recipeList,
-      })
+      this.setData({ selectedItem: name, selectedItemImage: itemImage, recipeList })
+    },
+
+    onIngredientTap(e: any) {
+      const name = e.currentTarget.dataset.name
+      if (!name) return
+      const item = itemsMap[name]
+      if (!item) {
+        wx.showToast({ title: '未找到该物品信息', icon: 'none' })
+        return
+      }
+      this.setData({ showPopup: true, popupItem: item })
+    },
+
+    closePopup() {
+      this.setData({ showPopup: false, popupItem: null })
+    },
+
+    onPopupIngredientTap(e: any) {
+      const name = e.currentTarget.dataset.name
+      if (!name) return
+      const item = itemsMap[name]
+      if (!item) {
+        wx.showToast({ title: '未找到该物品信息', icon: 'none' })
+        return
+      }
+      this.setData({ popupItem: item })
     },
   },
 })
