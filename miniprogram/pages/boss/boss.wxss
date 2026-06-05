@@ -1,0 +1,250 @@
+/* boss.wxss */
+page {
+  height: 100vh;
+  background-color: #2c2c2c;
+}
+
+.scrollarea {
+  height: 100vh;
+}
+
+.section-title {
+  padding: 24rpx 30rpx 8rpx;
+}
+
+.section-title-text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #e8d5a3;
+}
+
+/* Boss 网格 */
+.boss-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  padding: 20rpx 16rpx;
+}
+
+.boss-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16rpx 8rpx;
+  border-radius: 12rpx;
+  background-color: #3c3730;
+  border: 2rpx solid rgba(232, 213, 163, 0.15);
+}
+
+.boss-cell:active {
+  background-color: rgba(232, 213, 163, 0.2);
+  border-color: #e8d5a3;
+}
+
+.boss-icon {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.boss-name {
+  font-size: 24rpx;
+  color: #e8d5a3;
+  margin-top: 8rpx;
+  text-align: center;
+}
+
+/* ==================== 弹窗 ==================== */
+.popup-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-container {
+  width: 85%;
+  max-height: 80vh;
+  background-color: #2c2c2c;
+  border-radius: 20rpx;
+  border: 3rpx solid rgba(232, 213, 163, 0.4);
+  overflow: hidden;
+}
+
+.popup-header {
+  background-color: #3c3730;
+  padding: 28rpx 0 20rpx;
+  text-align: center;
+  border-bottom: 2rpx solid rgba(232, 213, 163, 0.3);
+}
+
+.popup-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #e8d5a3;
+}
+
+/* 阶段 / 等级切换 */
+.tabs-row {
+  display: flex;
+  justify-content: center;
+  gap: 8rpx;
+  padding: 16rpx 20rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 2rpx solid rgba(232, 213, 163, 0.15);
+}
+
+.tab-item {
+  padding: 10rpx 28rpx;
+  border-radius: 28rpx;
+  border: 2rpx solid rgba(232, 213, 163, 0.25);
+}
+
+.tab-item:active {
+  opacity: 0.8;
+}
+
+.tab-active {
+  background-color: rgba(232, 213, 163, 0.25);
+  border-color: #e8d5a3;
+}
+
+.tab-text {
+  font-size: 24rpx;
+  color: #e8d5a3;
+}
+
+.level-tabs {
+  border-top: 2rpx solid rgba(232, 213, 163, 0.15);
+  border-bottom: none;
+}
+
+.level-item {
+  padding: 8rpx 24rpx;
+}
+
+.popup-image-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 30rpx 0 20rpx;
+  border-bottom: 2rpx solid rgba(232, 213, 163, 0.15);
+}
+
+.popup-image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.popup-section-header {
+  background-color: rgba(232, 213, 163, 0.1);
+  padding: 14rpx 0;
+  text-align: center;
+  border-bottom: 2rpx solid rgba(232, 213, 163, 0.2);
+  border-top: 2rpx solid rgba(232, 213, 163, 0.2);
+}
+
+.popup-section-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #e8d5a3;
+}
+
+/* 属性列表 */
+.stats-list {
+  padding: 12rpx 28rpx;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14rpx 0;
+  border-bottom: 1rpx solid rgba(232, 213, 163, 0.08);
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #e8d5a3;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
+.stat-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8rpx;
+  flex: 1;
+}
+
+.stat-tag {
+  font-size: 22rpx;
+  color: #ccc;
+  background: rgba(232, 213, 163, 0.1);
+  border: 1rpx solid rgba(232, 213, 163, 0.2);
+  border-radius: 8rpx;
+  padding: 4rpx 14rpx;
+  white-space: nowrap;
+}
+
+/* 掉落物网格 */
+.drops-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20rpx;
+  padding: 20rpx 24rpx;
+}
+
+.drop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110rpx;
+}
+
+.drop-icon {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.drop-name {
+  font-size: 18rpx;
+  color: #ccc;
+  margin-top: 6rpx;
+  text-align: center;
+  word-break: break-all;
+}
+
+.drop-qty {
+  font-size: 18rpx;
+  color: #e8d5a3;
+}
+
+/* 关闭按钮 */
+.popup-close {
+  padding: 24rpx 0;
+  text-align: center;
+  border-top: 2rpx solid rgba(232, 213, 163, 0.2);
+  background-color: #3c3730;
+}
+
+.popup-close:active {
+  background-color: rgba(232, 213, 163, 0.15);
+}
+
+.popup-close-text {
+  font-size: 28rpx;
+  color: #e8d5a3;
+  font-weight: 500;
+}

@@ -1,0 +1,78 @@
+<!--boss.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="section-title">
+    <text class="section-title-text">巨兽</text>
+  </view>
+
+  <!-- Boss 网格 -->
+  <view class="boss-grid">
+    <view class="boss-cell" wx:for="{{giants}}" wx:key="name" bindtap="onBossTap" data-index="{{index}}">
+      <image class="boss-icon" src="{{item.image}}" mode="aspectFit" />
+      <text class="boss-name">{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- Boss 详情弹窗 -->
+  <view class="popup-mask" wx:if="{{showPopup}}" bindtap="closePopup">
+    <scroll-view class="popup-container" scroll-y catchtap="">
+      <!-- 名称 -->
+      <view class="popup-header">
+        <text class="popup-title">{{popupBoss.name}}</text>
+      </view>
+
+      <!-- 阶段切换 -->
+      <view class="tabs-row" wx:if="{{phases.length > 1}}">
+        <view class="tab-item {{selectedPhase === index ? 'tab-active' : ''}}" wx:for="{{phases}}" wx:key="name" catchtap="onPhaseTap" data-index="{{index}}">
+          <text class="tab-text">{{item.name}}</text>
+        </view>
+      </view>
+
+      <!-- 大图 -->
+      <view class="popup-image-wrap">
+        <image class="popup-image" src="{{currentImage}}" mode="aspectFit" />
+      </view>
+
+      <!-- 等级切换 -->
+      <view class="tabs-row level-tabs" wx:if="{{levels.length > 1}}">
+        <view class="tab-item level-item {{selectedLevel === index ? 'tab-active' : ''}}" wx:for="{{levels}}" wx:key="name" catchtap="onLevelTap" data-index="{{index}}">
+          <text class="tab-text">{{item.name}}</text>
+        </view>
+      </view>
+
+      <!-- 属性 -->
+      <view class="popup-section-header">
+        <text class="popup-section-title">属性</text>
+      </view>
+      <view class="stats-list">
+        <view class="stat-row" wx:for="{{statKeys}}" wx:key="*this" wx:for-item="key">
+          <text class="stat-label">{{key}}</text>
+          <view class="stat-values">
+            <block wx:if="{{currentStats[key].length > 0}}">
+              <text class="stat-tag" wx:for="{{currentStats[key]}}" wx:key="*this">{{item}}</text>
+            </block>
+            <text class="stat-tag" wx:else>{{currentStats[key]}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 掉落物 -->
+      <block wx:if="{{popupBoss.drops.length > 0}}">
+        <view class="popup-section-header">
+          <text class="popup-section-title">掉落</text>
+        </view>
+        <view class="drops-grid">
+          <view class="drop-item" wx:for="{{popupBoss.drops}}" wx:key="name">
+            <image class="drop-icon" src="{{item.image}}" mode="aspectFit" />
+            <text class="drop-name">{{item.name}}</text>
+            <text class="drop-qty" wx:if="{{item.quantity}}">{{item.quantity}}</text>
+          </view>
+        </view>
+      </block>
+
+      <!-- 关闭 -->
+      <view class="popup-close" bindtap="closePopup">
+        <text class="popup-close-text">关闭</text>
+      </view>
+    </scroll-view>
+  </view>
+</scroll-view>

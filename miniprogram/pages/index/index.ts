@@ -19,6 +19,7 @@ Component({
   lifetimes: {
     attached() {
       this.setData({ categories })
+      this.onCategoryTap({ currentTarget: { dataset: { index: 1 } } })
     }
   },
   methods: {

@@ -1,16 +1,18 @@
 <!--cooking.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="section-title">
-    <text class="section-title-text">食谱</text>
-  </view>
-
-  <!-- 食谱网格 -->
-  <view class="dishes-grid">
-    <view class="dish-cell" wx:for="{{dishes}}" wx:key="name" bindtap="onDishTap" data-index="{{index}}">
-      <image class="dish-icon" src="{{item.icon || item.image}}" mode="aspectFit" />
-      <text class="dish-name">{{item.name}}</text>
+  <!-- 分组食谱 -->
+  <block wx:for="{{groups}}" wx:key="title" wx:for-item="group" wx:for-index="gIdx">
+    <view class="section-title">
+      <image class="section-title-icon" wx:if="{{group.icon}}" src="{{group.icon}}" mode="aspectFit" />
+      <text class="section-title-text">{{group.title}}</text>
     </view>
-  </view>
+    <view class="dishes-grid">
+      <view class="dish-cell" wx:for="{{group.dishes}}" wx:key="name" bindtap="onDishTap" data-group="{{gIdx}}" data-index="{{index}}">
+        <image class="dish-icon" src="{{item.icon || item.image}}" mode="aspectFit" />
+        <text class="dish-name">{{item.name}}</text>
+      </view>
+    </view>
+  </block>
 
   <!-- 食谱详情弹窗 -->
   <view class="popup-mask" wx:if="{{showPopup}}" bindtap="closePopup">

@@ -1,0 +1,2073 @@
+{
+  "scrape_date": "2026-06-05",
+  "source": "https://dontstarve.huijiwiki.com/wiki/%E5%B7%A8%E5%85%BD",
+  "total_giants": 33,
+  "giants": [
+    {
+      "name": "帝王蟹",
+      "href": "/wiki/%E5%B8%9D%E7%8E%8B%E8%9F%B9",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/94/Crab_King.png/232px-Crab_King.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "5"
+        },
+        {
+          "name": "帝王蟹保险杠套装",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/54/Crab_King_Bumper_Kit.png/32px-Crab_King_Bumper_Kit.png",
+          "quantity": "8"
+        },
+        {
+          "name": "藤壶",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/92/Barnacles.png/32px-Barnacles.png",
+          "quantity": "2"
+        },
+        {
+          "name": "高音贝壳钟",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/74/Soprano_Shell_Bell.png/32px-Soprano_Shell_Bell.png",
+          "quantity": "3"
+        },
+        {
+          "name": "中音贝壳钟",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cf/Alto_Shell_Bell.png/32px-Alto_Shell_Bell.png",
+          "quantity": "2"
+        },
+        {
+          "name": "低音贝壳钟",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/37/Baritone_Shell_Bell.png/32px-Baritone_Shell_Bell.png",
+          "quantity": "1"
+        },
+        {
+          "name": "瓶中信",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c9/Message_in_a_Bottle_DST.png/32px-Message_in_a_Bottle_DST.png",
+          "quantity": "2"
+        },
+        {
+          "name": "刺耳三叉戟",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/f6/Strident_Trident.png/32px-Strident_Trident.png",
+          "quantity": "1"
+        },
+        {
+          "name": "帝王蟹雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d6/Crab_King_Figure_%28Marble%29.png/32px-Crab_King_Figure_%28Marble%29.png",
+          "quantity": "1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "12000"
+        ],
+        "伤害": [
+          "150帝王蟹不会攻击，该数值仅用于薇格弗德回血公式等受到生物攻击力影响的功能"
+        ]
+      }
+    },
+    {
+      "name": "暗影骑士",
+      "href": "/wiki/%E6%9A%97%E5%BD%B1%E9%AA%91%E5%A3%AB",
+      "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/4/4d/Shadow_Knight.png",
+      "drops": [
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c9/Night_Armor.png/32px-Night_Armor.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜剑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/2e/Dark_Sword.png/32px-Dark_Sword.png",
+          "quantity": ""
+        }
+      ],
+      "levels": [
+        {
+          "name": "一级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/4/4d/Shadow_Knight.png"
+        },
+        {
+          "name": "二级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/2/22/Level_2_Shadow_Knight.png"
+        },
+        {
+          "name": "三级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/2/2a/Level_3_Shadow_Knight.png"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "900 / 2700 / 8100"
+        ],
+        "伤害": [
+          "40 / 90 / 150"
+        ],
+        "攻击间隔": [
+          "3 / 2.5 / 2"
+        ],
+        "攻击范围": [
+          "2.3 / 3.2 / 5"
+        ],
+        "理智光环": [
+          "-100 /分钟"
+        ],
+        "行走速度": "7",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "暗影主教",
+      "href": "/wiki/%E6%9A%97%E5%BD%B1%E4%B8%BB%E6%95%99",
+      "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/5/5f/Shadow_Bishop.png",
+      "drops": [
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c9/Night_Armor.png/32px-Night_Armor.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜剑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/2e/Dark_Sword.png/32px-Dark_Sword.png",
+          "quantity": ""
+        }
+      ],
+      "levels": [
+        {
+          "name": "一级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/5/5f/Shadow_Bishop.png"
+        },
+        {
+          "name": "二级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/7/7b/Level_2_Shadow_Bishop.png"
+        },
+        {
+          "name": "三级",
+          "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/4/4d/Level_3_Shadow_Bishop.png"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "800 / 2500 / 7500"
+        ],
+        "伤害": [
+          "20 / 35 / 60"
+        ],
+        "攻击间隔": [
+          "15 / 14 / 12"
+        ],
+        "攻击范围": [
+          "4 / 6 / 8"
+        ],
+        "理智光环": [
+          "-100 /分钟"
+        ],
+        "行走速度": "3",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "暗影战车",
+      "href": "/wiki/%E6%9A%97%E5%BD%B1%E6%88%98%E8%BD%A6",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/13/Shadow_Rook.png/188px-Shadow_Rook.png",
+      "drops": [
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c9/Night_Armor.png/32px-Night_Armor.png",
+          "quantity": ""
+        },
+        {
+          "name": "暗夜剑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/2e/Dark_Sword.png/32px-Dark_Sword.png",
+          "quantity": ""
+        }
+      ],
+      "levels": [
+        {
+          "name": "一级",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/13/Shadow_Rook.png/188px-Shadow_Rook.png"
+        },
+        {
+          "name": "二级",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b0/Level_2_Shadow_Rook.png/188px-Level_2_Shadow_Rook.png"
+        },
+        {
+          "name": "三级",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/49/Level_3_Shadow_Rook.png/188px-Level_3_Shadow_Rook.png"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "1000 / 4000 / 10000"
+        ],
+        "伤害": [
+          "45 / 100 / 165"
+        ],
+        "攻击间隔": [
+          "6 / 5.5 / 5"
+        ],
+        "攻击范围": [
+          "8 / 10 / 13"
+        ],
+        "理智光环": [
+          "-100 /分钟"
+        ],
+        "行走速度": "7",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "克劳斯",
+      "href": "/wiki/%E5%85%8B%E5%8A%B3%E6%96%AF",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e1/Klaus.png/298px-Klaus.png",
+      "drops": [
+        {
+          "name": "木炭",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/4f/Charcoal.png/32px-Charcoal.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "麋鹿茸",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/72/Stag_Antler.png/32px-Stag_Antler.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "克劳斯雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/4a/Klaus_Figure_%28Marble%29.png/32px-Klaus_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": ""
+        },
+        {
+          "name": "拐杖糖",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/13/Candy_Cane.png/32px-Candy_Cane.png",
+          "quantity": "×2"
+        }
+      ],
+      "phases": [
+        {
+          "name": "第一阶段",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e1/Klaus.png/298px-Klaus.png",
+          "stats": {
+            "生命值": [
+              "10000",
+              "27440（狂暴）"
+            ],
+            "伤害": [
+              "75",
+              "205.8（狂暴）"
+            ],
+            "攻击间隔": [
+              "3",
+              "2.14（狂暴）"
+            ],
+            "攻击范围": [
+              "3",
+              "4.2（狂暴）"
+            ],
+            "理智光环": [
+              "无"
+            ],
+            "行走速度": "2.75",
+            "奔跑速度": "6"
+          }
+        },
+        {
+          "name": "第二阶段",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/08/Klaus2.png/298px-Klaus2.png",
+          "stats": {
+            "生命值": [
+              "5000",
+              "13720（狂暴）"
+            ],
+            "伤害": [
+              "75",
+              "205.8（狂暴）"
+            ],
+            "攻击间隔": [
+              "3"
+            ],
+            "攻击范围": [
+              "3"
+            ],
+            "理智光环": [
+              "（仅在吼叫时）",
+              "-100 /分",
+              "-400 /分（狂暴）"
+            ],
+            "行走速度": "2.75",
+            "奔跑速度": "6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "复活的骨架",
+      "href": "/wiki/%E5%A4%8D%E6%B4%BB%E7%9A%84%E9%AA%A8%E6%9E%B6",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/48/Reanimated_Skeleton_Forest.png/288px-Reanimated_Skeleton_Forest.png",
+      "drops": [
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "化石碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/10/Fossil_Fragments.png/32px-Fossil_Fragments.png",
+          "quantity": "×8"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "化石碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/10/Fossil_Fragments.png/32px-Fossil_Fragments.png",
+          "quantity": "×8"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×2"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×2（每个 50%）"
+        }
+      ],
+      "phases": [
+        {
+          "name": "森林形态",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/48/Reanimated_Skeleton_Forest.png/288px-Reanimated_Skeleton_Forest.png",
+          "stats": {
+            "生命值": [
+              "4000"
+            ],
+            "理智光环": [
+              "-400 /分钟"
+            ],
+            "行走速度": "4.2",
+            "奔跑速度": "6"
+          }
+        },
+        {
+          "name": "洞穴形态",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Reanimated_Skeleton_Caves.png/288px-Reanimated_Skeleton_Caves.png",
+          "stats": {
+            "生命值": [
+              "4000"
+            ],
+            "伤害": [
+              "200"
+            ],
+            "攻击间隔": [
+              "4"
+            ],
+            "攻击范围": [
+              "2.4"
+            ],
+            "理智光环": [
+              "-400 /分钟"
+            ],
+            "行走速度": "4.2",
+            "奔跑速度": "6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "大霜鲨",
+      "href": "/wiki/%E5%A4%A7%E9%9C%9C%E9%B2%A8",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/48/Frostjaw.png/240px-Frostjaw.png",
+      "drops": [],
+      "stats": {
+        "生命值": [
+          "8000"
+        ],
+        "伤害": [
+          "75"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "4.5"
+        ],
+        "行走速度": "2.3",
+        "奔跑速度": "8"
+      }
+    },
+    {
+      "name": "天体仇灵",
+      "href": "/wiki/%E5%A4%A9%E4%BD%93%E4%BB%87%E7%81%B5",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d3/Celestial_Revenant.png/188px-Celestial_Revenant.png",
+      "drops": [
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×3，"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "注能月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fc/Infused_Moon_Shard.png/32px-Infused_Moon_Shard.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×2（每个66%）"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×2（每个66%）"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×1（33%）"
+        },
+        {
+          "name": "注能月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fc/Infused_Moon_Shard.png/32px-Infused_Moon_Shard.png",
+          "quantity": "×1（66%）"
+        },
+        {
+          "name": "注能月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fc/Infused_Moon_Shard.png/32px-Infused_Moon_Shard.png",
+          "quantity": "×2（每个33%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "8000"
+        ],
+        "伤害": [
+          "166.67（翻滚/默认）",
+          "+30位面伤害",
+          "66.67（盾牌）",
+          "+30位面伤害"
+        ],
+        "攻击间隔": [
+          "7.5"
+        ],
+        "攻击范围": [
+          "15"
+        ],
+        "理智光环": [
+          "100/分钟",
+          "战斗时：400/分钟"
+        ]
+      }
+    },
+    {
+      "name": "天体后裔",
+      "href": "/wiki/%E5%A4%A9%E4%BD%93%E5%90%8E%E8%A3%94",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Celestial_Scion.png/200px-Celestial_Scion.png",
+      "drops": [
+        {
+          "name": "天体珠宝",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/bc/Celestial_Jewel.png/32px-Celestial_Jewel.png",
+          "quantity": "×5，"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×5，"
+        },
+        {
+          "name": "烂电线",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fd/Frazzled_Wires.png/32px-Frazzled_Wires.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "齿轮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7d/Gears.png/32px-Gears.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "天体后裔雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5b/Celestial_Scion_Figure_%28Marble%29.png/32px-Celestial_Scion_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "天体后裔雕塑草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Celestial_Scion_Figure_Sketch.png/32px-Celestial_Scion_Figure_Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1（70%）"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1（30%）"
+        },
+        {
+          "name": "烂电线",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fd/Frazzled_Wires.png/32px-Frazzled_Wires.png",
+          "quantity": "×1（70%）"
+        },
+        {
+          "name": "齿轮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7d/Gears.png/32px-Gears.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "手套",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/79/Glove.png/32px-Glove.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "剪贴板",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c7/Clipboard.png/32px-Clipboard.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "16000"
+        ],
+        "伤害": [
+          "225",
+          "+ 35 位面伤害"
+        ],
+        "攻击间隔": [
+          "见正文"
+        ],
+        "攻击范围": [
+          "5"
+        ],
+        "理智光环": [
+          "400/分钟"
+        ],
+        "行走速度": "2.9",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "天体英雄",
+      "href": "/wiki/%E5%A4%A9%E4%BD%93%E8%8B%B1%E9%9B%84",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/2c/Celestial_Champion_Phase_1.png/188px-Celestial_Champion_Phase_1.png",
+      "drops": [
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×5，"
+        },
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×2（每个66%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "10000"
+        ],
+        "伤害": [
+          "166.67（翻滚/默认）",
+          "66.67（盾牌）"
+        ],
+        "攻击间隔": [
+          "7.5"
+        ],
+        "攻击范围": [
+          "15"
+        ],
+        "理智光环": [
+          "100/分钟",
+          "战斗时：400/分钟"
+        ]
+      }
+    },
+    {
+      "name": "巨大洞穴蠕虫",
+      "href": "/wiki/%E5%B7%A8%E5%A4%A7%E6%B4%9E%E7%A9%B4%E8%A0%95%E8%99%AB",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/78/Great_Depths_Worm.png/128px-Great_Depths_Worm.png",
+      "drops": [
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×3，"
+        },
+        {
+          "name": "发光浆果",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dc/Glow_Berry.png/32px-Glow_Berry.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "巨大洞穴蠕虫雕塑草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×1（66%）"
+        },
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×1（66%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "5000"
+        ],
+        "伤害": [
+          "14"
+        ],
+        "攻击间隔": [
+          "4"
+        ],
+        "攻击范围": [
+          "3"
+        ]
+      }
+    },
+    {
+      "name": "恐怖之眼",
+      "href": "/wiki/%E6%81%90%E6%80%96%E4%B9%8B%E7%9C%BC",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b2/Eye_of_Terror_Phase_1.png/188px-Eye_of_Terror_Phase_1.png",
+      "drops": [
+        {
+          "name": "乳白物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e5/Milky_Whites.png/32px-Milky_Whites.png",
+          "quantity": "×3，"
+        },
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "眼面具",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/34/Eye_Mask.png/32px-Eye_Mask.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "乳白物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e5/Milky_Whites.png/32px-Milky_Whites.png",
+          "quantity": "×2（每个 50%）"
+        },
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×2（每个 50%）"
+        },
+        {
+          "name": "恐怖之眼雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c3/Eye_Of_Terror_Figure_%28Marble%29.png/32px-Eye_Of_Terror_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "5000"
+        ],
+        "伤害": [
+          "125（冲撞）",
+          "100（啃咬）"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "3（近战）"
+        ],
+        "理智光环": [
+          "-100 /分钟"
+        ],
+        "行走速度": "4.5",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "战争瓦器人",
+      "href": "/wiki/%E6%88%98%E4%BA%89%E7%93%A6%E5%99%A8%E4%BA%BA",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/78/Undisclosed_Construct.png/200px-Undisclosed_Construct.png",
+      "drops": [
+        {
+          "name": "废料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b8/Scrap.png/32px-Scrap.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "战争瓦器人雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e7/W.A.R.B.O.T._Figure_%28Marble%29.png/32px-W.A.R.B.O.T._Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "战争瓦器人雕塑草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cf/W.A.R.B.O.T._Figure_Sketch.png/32px-W.A.R.B.O.T._Figure_Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "齿轮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7d/Gears.png/32px-Gears.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "电子元件",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/6c/Electrical_Doodad.png/32px-Electrical_Doodad.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "废料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b8/Scrap.png/32px-Scrap.png",
+          "quantity": "×1（50%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "22500"
+        ],
+        "伤害": [
+          "200",
+          "+30 位面伤害"
+        ],
+        "攻击间隔": [
+          "见正文"
+        ],
+        "攻击范围": [
+          "3"
+        ]
+      }
+    },
+    {
+      "name": "拾荒疯猪",
+      "href": "/wiki/%E6%8B%BE%E8%8D%92%E7%96%AF%E7%8C%AA",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dd/Scrappy_Werepig.png/318px-Scrappy_Werepig.png",
+      "drops": [
+        {
+          "name": "废料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b8/Scrap.png/32px-Scrap.png",
+          "quantity": "×4，"
+        },
+        {
+          "name": "视界扩展器",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/8d/Horizon_Expandinator.png/32px-Horizon_Expandinator.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "废料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b8/Scrap.png/32px-Scrap.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "齿轮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7d/Gears.png/32px-Gears.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "自动修理机",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/f3/Auto-Mat-O-Chanic.png/32px-Auto-Mat-O-Chanic.png",
+          "quantity": ""
+        },
+        {
+          "name": "W.A.R.B.I.S.头戴齿轮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7c/W.A.R.B.I.S._Head_Gear.png/32px-W.A.R.B.I.S._Head_Gear.png",
+          "quantity": ""
+        },
+        {
+          "name": "自动修理机",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/f3/Auto-Mat-O-Chanic.png/32px-Auto-Mat-O-Chanic.png",
+          "quantity": ""
+        },
+        {
+          "name": "W.A.R.B.I.S.盔甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/16/W.A.R.B.I.S._Armor.png/32px-W.A.R.B.I.S._Armor.png",
+          "quantity": ""
+        },
+        {
+          "name": "弹性空间制造器",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3a/Elastispacer.png/32px-Elastispacer.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": ""
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "10000"
+        ],
+        "伤害": [
+          "冲撞 50",
+          "十字爪 150",
+          "棍子 125",
+          "钻头 100",
+          "激光炮 80 ~ 240",
+          "抛出垃圾球 30"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "6"
+        ],
+        "理智光环": [
+          "-400 /分钟"
+        ],
+        "行走速度": "2.7",
+        "奔跑速度": "9"
+      }
+    },
+    {
+      "name": "晶体独眼巨鹿",
+      "href": "/wiki/%E6%99%B6%E4%BD%93%E7%8B%AC%E7%9C%BC%E5%B7%A8%E9%B9%BF",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/8e/Crystal_Deerclops.png/288px-Crystal_Deerclops.png",
+      "drops": [
+        {
+          "name": "腐烂物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/66/Rot.png/32px-Rot.png",
+          "quantity": "×3~4"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1~2"
+        },
+        {
+          "name": "冰",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/77/Ice.png/32px-Ice.png",
+          "quantity": "×1~2"
+        },
+        {
+          "name": "晶体独眼巨鹿雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3d/Crystal_Deerclops_Figure_%28Marble%29.png/32px-Crystal_Deerclops_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "晶体独眼巨鹿雕塑草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": ""
+        },
+        {
+          "name": "核化液",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/33/Nucleation_Fluid.png/32px-Nucleation_Fluid.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "6000"
+        ],
+        "伤害": [
+          "近战：",
+          "150",
+          "+30位面伤害",
+          "冰枪：",
+          "200",
+          "+30位面伤害"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "14"
+        ],
+        "理智光环": [
+          "-100/分钟",
+          "战斗时：-400/分钟"
+        ],
+        "行走速度": "3",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "果蝇王",
+      "href": "/wiki/%E6%9E%9C%E8%9D%87%E7%8E%8B",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b9/Lord_of_the_Fruit_Flies.png/128px-Lord_of_the_Fruit_Flies.png",
+      "drops": [
+        {
+          "name": "叶肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e9/Leafy_Meat.png/32px-Leafy_Meat.png",
+          "quantity": ""
+        },
+        {
+          "name": "友好果蝇果",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9e/Friendly_Fruit_Fly_Fruit.png/32px-Friendly_Fruit_Fly_Fruit.png",
+          "quantity": ""
+        },
+        {
+          "name": "作物种子",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/33/Plant_Seeds.png/32px-Plant_Seeds.png",
+          "quantity": ""
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "1500"
+        ],
+        "伤害": [
+          "25"
+        ],
+        "攻击间隔": [
+          "2"
+        ],
+        "攻击范围": [
+          "2"
+        ],
+        "理智光环": [
+          "-25 /分钟"
+        ],
+        "行走速度": "2",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "树精守卫",
+      "href": "/wiki/%E6%A0%91%E7%B2%BE%E5%AE%88%E5%8D%AB",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Treeguard.png/188px-Treeguard.png",
+      "drops": [
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "活木头",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/09/Living_Log.png/32px-Living_Log.png",
+          "quantity": "×6"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "2100 / 3000 / 3750"
+        ],
+        "伤害": [
+          "105 / 150 / 187.5"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "2.1 / 3.0 / 3.75"
+        ],
+        "理智光环": [
+          "-40/分钟",
+          "战斗时：-100/分钟"
+        ],
+        "行走速度": "1.05 / 1.5 / 1.875",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "梦魇疯猪",
+      "href": "/wiki/%E6%A2%A6%E9%AD%87%E7%96%AF%E7%8C%AA",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/eb/Nightmare_Werepig.png/318px-Nightmare_Werepig.png",
+      "drops": [
+        {
+          "name": "纯粹恐惧",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/2b/Pure_Horror.png/32px-Pure_Horror.png",
+          "quantity": "×4 ~ 5，"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×0 ~ 1"
+        },
+        {
+          "name": "绝望石盔甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b4/Dreadstone_Armor.png/32px-Dreadstone_Armor.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "绝望石头盔",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7e/Dreadstone_Helm.png/32px-Dreadstone_Helm.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "绝望石墙",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/ca/Dreadstone_Wall.png/32px-Dreadstone_Wall.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "梦魇疯猪雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/52/Nightmare_Werepig_Figure_%28Marble%29.png/32px-Nightmare_Werepig_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "绝望石支柱脚手架",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/80/Dreadstone_Pillar_Scaffold_Map_Icon.png/32px-Dreadstone_Pillar_Scaffold_Map_Icon.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "10000"
+        ],
+        "伤害": [
+          "150（十字爪）",
+          "225（重砸）",
+          "50（冲撞）"
+        ],
+        "攻击间隔": [
+          "4"
+        ],
+        "攻击范围": [
+          "6"
+        ],
+        "理智光环": [
+          "受到束缚：-100/分钟",
+          "解除束缚：-400/分钟",
+          "击败后：-40/分钟"
+        ],
+        "行走速度": "2.7",
+        "奔跑速度": "9"
+      }
+    },
+    {
+      "name": "毒菌蟾蜍",
+      "href": "/wiki/%E6%AF%92%E8%8F%8C%E8%9F%BE%E8%9C%8D",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/a7/Toadstool.png/288px-Toadstool.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "3"
+        },
+        {
+          "name": "采摘的红蘑菇",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0f/Red_Cap.png/32px-Red_Cap.png",
+          "quantity": "1"
+        },
+        {
+          "name": "采摘的绿蘑菇",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/84/Green_Cap.png/32px-Green_Cap.png",
+          "quantity": "1"
+        },
+        {
+          "name": "采摘的蓝蘑菇",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/37/Blue_Cap.png/32px-Blue_Cap.png",
+          "quantity": "1"
+        },
+        {
+          "name": "红色孢子",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Red_Spore.png/32px-Red_Spore.png",
+          "quantity": "2"
+        },
+        {
+          "name": "蛙腿",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/52/Frog_Legs.png/32px-Frog_Legs.png",
+          "quantity": "1"
+        },
+        {
+          "name": "蘑菇皮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/60/Shroom_Skin.png/32px-Shroom_Skin.png",
+          "quantity": "1"
+        },
+        {
+          "name": "毒菌蟾蜍雕塑草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "1"
+        },
+        {
+          "name": "红蘑菇帽",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d5/Red_Funcap.png/32px-Red_Funcap.png",
+          "quantity": "1"
+        },
+        {
+          "name": "蘑菇灯",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/ff/Mushlight.png/32px-Mushlight.png",
+          "quantity": "1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "52500"
+        ],
+        "伤害": [
+          "100 / 120 / 150 / 250"
+        ],
+        "攻击间隔": [
+          "3.5 / 3 / 2.5 / 2"
+        ],
+        "攻击范围": [
+          "7"
+        ],
+        "理智光环": [
+          "孢子帽萌发时：",
+          "-400 /分钟"
+        ]
+      }
+    },
+    {
+      "name": "熊獾",
+      "href": "/wiki/%E7%86%8A%E7%8D%BE",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/88/Bearger.png/270px-Bearger.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×8，"
+        },
+        {
+          "name": "熊皮",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/41/Thick_Fur.png/32px-Thick_Fur.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "熊獾雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/bc/Bearger_Figure_%28Marble%29.png/32px-Bearger_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "6000"
+        ],
+        "伤害": [
+          "175"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "5"
+        ],
+        "理智光环": [
+          "-100/分",
+          "战斗时：-400/分"
+        ],
+        "行走速度": "3（平静时）6（被激怒时）",
+        "奔跑速度": "10"
+      }
+    },
+    {
+      "name": "独眼巨鹿",
+      "href": "/wiki/%E7%8B%AC%E7%9C%BC%E5%B7%A8%E9%B9%BF",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/85/Deerclops.png/298px-Deerclops.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×8，"
+        },
+        {
+          "name": "独眼巨鹿眼球",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/24/Deerclops_Eyeball.png/32px-Deerclops_Eyeball.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "独眼巨鹿雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b7/Deerclops_Figure_%28Marble%29.png/32px-Deerclops_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "圣诞灯",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/74/Festive_Light.png/32px-Festive_Light.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "4000"
+        ],
+        "伤害": [
+          "150"
+        ],
+        "攻击间隔": [
+          "4"
+        ],
+        "攻击范围": [
+          "8"
+        ],
+        "理智光环": [
+          "-100/分",
+          "战斗时：-400/分"
+        ],
+        "行走速度": "3",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "蚁狮",
+      "href": "/wiki/%E8%9A%81%E7%8B%AE",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/ff/Antlion.png/288px-Antlion.png",
+      "drops": [
+        {
+          "name": "沙之石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/da/Desert_Stone.png/32px-Desert_Stone.png",
+          "quantity": "×6 ~ 8，"
+        },
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×4,"
+        },
+        {
+          "name": "石头",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/a6/Rocks.png/32px-Rocks.png",
+          "quantity": "×2 ~ 4"
+        },
+        {
+          "name": "懒人传送塔",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b2/The_Lazy_Deserter.png/32px-The_Lazy_Deserter.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "刮地皮头盔",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/1a/Turf-Raiser_Helm.png/32px-Turf-Raiser_Helm.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "蚁狮雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/bb/Antlion_Figure_%28Marble%29.png/32px-Antlion_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "6000"
+        ],
+        "伤害": [
+          "50 / 75 / 100"
+        ],
+        "攻击间隔": [
+          "2 ~ 4"
+        ],
+        "理智光环": [
+          "-40/分钟（战斗时）"
+        ]
+      }
+    },
+    {
+      "name": "蜂王",
+      "href": "/wiki/%E8%9C%82%E7%8E%8B",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/63/Bee_Queen.png/128px-Bee_Queen.png",
+      "drops": [
+        {
+          "name": "蜂蜜",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c6/Honey.png/32px-Honey.png",
+          "quantity": "×3，"
+        },
+        {
+          "name": "蜜脾",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7c/Honeycomb.png/32px-Honeycomb.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "针刺",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b6/Stinger.png/32px-Stinger.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "蜂王浆",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Royal_Jelly.png/32px-Royal_Jelly.png",
+          "quantity": "×6，"
+        },
+        {
+          "name": "蜂王冠",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d5/Bee_Queen_Crown.png/32px-Bee_Queen_Crown.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "捆绑包装",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/60/Bundling_Wrap.png/32px-Bundling_Wrap.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "蜂王雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e8/Bee_Queen_Figure_%28Marble%29.png/32px-Bee_Queen_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "蜂王浆",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Royal_Jelly.png/32px-Royal_Jelly.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "蜜脾",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/7c/Honeycomb.png/32px-Honeycomb.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "蜂蜜",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c6/Honey.png/32px-Honey.png",
+          "quantity": "×1（50%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "22500"
+        ],
+        "伤害": [
+          "120"
+        ],
+        "攻击间隔": [
+          "2"
+        ],
+        "攻击范围": [
+          "4"
+        ],
+        "理智光环": [
+          "-400/分钟（战吼时）"
+        ],
+        "行走速度": "4",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "蜘蛛女王",
+      "href": "/wiki/%E8%9C%98%E8%9B%9B%E5%A5%B3%E7%8E%8B",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/79/Spider_Queen.png/256px-Spider_Queen.png",
+      "drops": [
+        {
+          "name": "怪物肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/81/Monster_Meat.png/32px-Monster_Meat.png",
+          "quantity": "×4,"
+        },
+        {
+          "name": "蜘蛛丝",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/83/Silk.png/32px-Silk.png",
+          "quantity": "×4,"
+        },
+        {
+          "name": "蜘蛛卵",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/ec/Spider_Eggs.png/32px-Spider_Eggs.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "蜘蛛帽",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/99/Spiderhat.png/32px-Spiderhat.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "2500"
+        ],
+        "伤害": [
+          "80"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "5"
+        ],
+        "理智光环": [
+          "-400 /分钟"
+        ],
+        "行走速度": "1.75",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "装甲熊獾",
+      "href": "/wiki/%E8%A3%85%E7%94%B2%E7%86%8A%E7%8D%BE",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Armored_Bearger.png/288px-Armored_Bearger.png",
+      "drops": [
+        {
+          "name": "腐烂物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/66/Rot.png/32px-Rot.png",
+          "quantity": "×3，"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "装甲熊獾雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/ba/Armored_Bearger_Figure_%28Marble%29.png/32px-Armored_Bearger_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "腐烂物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/66/Rot.png/32px-Rot.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1（75%）"
+        },
+        {
+          "name": "核化液",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/33/Nucleation_Fluid.png/32px-Nucleation_Fluid.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "8000"
+        ],
+        "伤害": [
+          "175",
+          "+ 30 位面伤害"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "6"
+        ],
+        "理智光环": [
+          "-100/分",
+          "战斗时：-400/分"
+        ],
+        "行走速度": "3",
+        "奔跑速度": "10"
+      }
+    },
+    {
+      "name": "远古守卫塔",
+      "href": "/wiki/%E8%BF%9C%E5%8F%A4%E5%AE%88%E5%8D%AB%E5%A1%94",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/94/Ancient_Guard_Tower.png/248px-Ancient_Guard_Tower.png",
+      "drops": [
+        {
+          "name": "铥矿",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9a/Thulecite.png/32px-Thulecite.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "铥矿碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/4a/Thulecite_Fragments.png/32px-Thulecite_Fragments.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "石头",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/a6/Rocks.png/32px-Rocks.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "铥矿",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9a/Thulecite.png/32px-Thulecite.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "铥矿碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/4a/Thulecite_Fragments.png/32px-Thulecite_Fragments.png",
+          "quantity": "×1（66.67%）"
+        },
+        {
+          "name": "铥矿碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/4a/Thulecite_Fragments.png/32px-Thulecite_Fragments.png",
+          "quantity": "×1（33.33%）"
+        },
+        {
+          "name": "石头",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/a6/Rocks.png/32px-Rocks.png",
+          "quantity": "×1（75%）"
+        },
+        {
+          "name": "石头",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/a6/Rocks.png/32px-Rocks.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "月岩",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/0d/Moon_Rock.png/32px-Moon_Rock.png",
+          "quantity": "×1（50%）"
+        }
+      ],
+      "phases": [
+        {
+          "name": "激活",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/94/Ancient_Guard_Tower.png/248px-Ancient_Guard_Tower.png",
+          "stats": {
+            "生命值": [
+              "6000"
+            ],
+            "伤害": [
+              "150"
+            ],
+            "攻击间隔": [
+              "3"
+            ],
+            "攻击范围": [
+              "5"
+            ],
+            "行走速度": "2.85",
+            "奔跑速度": "2.85"
+          }
+        },
+        {
+          "name": "休眠",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/62/Ancient_Tower.png/128px-Ancient_Tower.png",
+          "stats": {}
+        }
+      ]
+    },
+    {
+      "name": "远古守护者",
+      "href": "/wiki/%E8%BF%9C%E5%8F%A4%E5%AE%88%E6%8A%A4%E8%80%85",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/0/03/Ancient_Guardian.png/188px-Ancient_Guardian.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×8，"
+        },
+        {
+          "name": "守护者之角",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/1f/Guardian%27s_Horn.png/32px-Guardian%27s_Horn.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "支柱脚手架",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/22/Pillar_Scaffold_Map_Icon.png/32px-Pillar_Scaffold_Map_Icon.png",
+          "quantity": ""
+        },
+        {
+          "name": "稀有蓝图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d9/Blueprint_%28rare%29.png/32px-Blueprint_%28rare%29.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "远古守护者雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d0/Ancient_Guardian_Figure_%28Marble%29.png/32px-Ancient_Guardian_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "10000 ~ 6000（一阶段）",
+          "6000 ~ 0（二阶段）"
+        ],
+        "伤害": [
+          "100"
+        ],
+        "攻击间隔": [
+          "2"
+        ],
+        "攻击范围": [
+          "4.1（近战）",
+          "25（冲撞）"
+        ],
+        "行走速度": "5",
+        "奔跑速度": "17"
+      }
+    },
+    {
+      "name": "远古织影者",
+      "href": "/wiki/%E8%BF%9C%E5%8F%A4%E7%BB%87%E5%BD%B1%E8%80%85",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/df/Ancient_Fuelweaver.png/288px-Ancient_Fuelweaver.png",
+      "drops": [
+        {
+          "name": "化石碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/1/10/Fossil_Fragments.png/32px-Fossil_Fragments.png",
+          "quantity": "×8"
+        },
+        {
+          "name": "暗影心房",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9f/Shadow_Atrium.png/32px-Shadow_Atrium.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "暗影香炉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/c1/Shadow_Thurible.png/32px-Shadow_Thurible.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "骨头头盔",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/bc/Bone_Helm.png/32px-Bone_Helm.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "骨头盔甲",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/85/Bone_Armor.png/32px-Bone_Armor.png",
+          "quantity": "×1"
+        },
+        {
+          "name": "远古织影者雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/f4/Ancient_Fuelweaver_Figure_%28Marble%29.png/32px-Ancient_Fuelweaver_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×4"
+        },
+        {
+          "name": "噩梦燃料",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×2（每个 50%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "16000"
+        ],
+        "伤害": [
+          "200"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "2.4"
+        ],
+        "理智光环": [
+          "-400 /分钟"
+        ],
+        "行走速度": "4.2",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "邪天翁",
+      "href": "/wiki/%E9%82%AA%E5%A4%A9%E7%BF%81",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/e0/Malbatross.png/288px-Malbatross.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×7，"
+        },
+        {
+          "name": "邪天翁喙",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/d2/Malbatross_Bill.png/32px-Malbatross_Bill.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "邪天翁羽毛",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/53/Malbatross_Feather.png/32px-Malbatross_Feather.png",
+          "quantity": "×3 ~ 29，"
+        },
+        {
+          "name": "蓝宝石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/96/Blue_Gem.png/32px-Blue_Gem.png",
+          "quantity": "×2"
+        },
+        {
+          "name": "蓝宝石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/96/Blue_Gem.png/32px-Blue_Gem.png",
+          "quantity": "×1（30%）"
+        },
+        {
+          "name": "黄宝石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/e/ec/Yellow_Gem.png/32px-Yellow_Gem.png",
+          "quantity": "×1（5%）"
+        },
+        {
+          "name": "邪天翁雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/76/Malbatross_Figure_%28Marble%29.png/32px-Malbatross_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": ""
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "5000"
+        ],
+        "伤害": [
+          "150"
+        ],
+        "攻击间隔": [
+          "4"
+        ],
+        "攻击范围": [
+          "5（3群伤）"
+        ],
+        "行走速度": "3",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "附身座狼",
+      "href": "/wiki/%E9%99%84%E8%BA%AB%E5%BA%A7%E7%8B%BC",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3b/Possessed_Varg.png/288px-Possessed_Varg.png",
+      "drops": [
+        {
+          "name": "腐烂物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/66/Rot.png/32px-Rot.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1，"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×3"
+        },
+        {
+          "name": "腐烂物",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/66/Rot.png/32px-Rot.png",
+          "quantity": "×1（50%）"
+        },
+        {
+          "name": "纯粹辉煌",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cd/Pure_Brilliance.png/32px-Pure_Brilliance.png",
+          "quantity": "×1（75%）"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×2（每个75%）"
+        },
+        {
+          "name": "月亮碎片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Moon_Shard.png/32px-Moon_Shard.png",
+          "quantity": "×1（25%）"
+        },
+        {
+          "name": "附身座狼雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/64/Possessed_Varg_Figure_%28Marble%29.png/32px-Possessed_Varg_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": ""
+        },
+        {
+          "name": "核化液",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/33/Nucleation_Fluid.png/32px-Nucleation_Fluid.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "3000"
+        ],
+        "伤害": [
+          "近战：",
+          "50",
+          "+30位面伤害",
+          "冷火：",
+          "20",
+          "+30位面伤害"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "4"
+        ],
+        "理智光环": [
+          "-100 /分钟"
+        ],
+        "行走速度": "4",
+        "奔跑速度": "5.5"
+      }
+    },
+    {
+      "name": "麋鹿鹅",
+      "href": "/wiki/%E9%BA%8B%E9%B9%BF%E9%B9%85",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dd/Goose.png/256px-Goose.png",
+      "drops": [
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "×6，"
+        },
+        {
+          "name": "鸟腿",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dd/Drumstick.png/32px-Drumstick.png",
+          "quantity": "×2，"
+        },
+        {
+          "name": "麋鹿鹅羽毛",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dc/Down_Feather.png/32px-Down_Feather.png",
+          "quantity": "×3"
+        },
+        {
+          "name": "麋鹿鹅羽毛",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/d/dc/Down_Feather.png/32px-Down_Feather.png",
+          "quantity": "×2（每个 33%）"
+        },
+        {
+          "name": "麋鹿鹅雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/fa/Moose_Figure_%28Marble%29.png/32px-Moose_Figure_%28Marble%29.png",
+          "quantity": ""
+        },
+        {
+          "name": "草图",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/5f/Sketch.png/32px-Sketch.png",
+          "quantity": "×1"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "6000"
+        ],
+        "伤害": [
+          "150"
+        ],
+        "攻击间隔": [
+          "3"
+        ],
+        "攻击范围": [
+          "5.5"
+        ],
+        "行走速度": "8",
+        "奔跑速度": "12"
+      }
+    },
+    {
+      "name": "龙蝇",
+      "href": "/wiki/%E9%BE%99%E8%9D%87",
+      "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/8/84/Dragonfly.png/288px-Dragonfly.png",
+      "drops": [
+        {
+          "name": "鳞片",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/90/Scales.png/32px-Scales.png",
+          "quantity": "1 个"
+        },
+        {
+          "name": "肉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/5/58/Meat.png/32px-Meat.png",
+          "quantity": "6 个"
+        },
+        {
+          "name": "金块",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/c/cf/Gold_Nugget.png/32px-Gold_Nugget.png",
+          "quantity": "4 个额外 4 个（每个 50%）"
+        },
+        {
+          "name": "红宝石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/92/Red_Gem.png/32px-Red_Gem.png",
+          "quantity": "2 个"
+        },
+        {
+          "name": "紫宝石",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/f/f8/Purple_Gem.png/32px-Purple_Gem.png",
+          "quantity": "1 个额外 1 个（50%）"
+        },
+        {
+          "name": "龙鳞火炉",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/21/Scaled_Furnace.png/32px-Scaled_Furnace.png",
+          "quantity": "1 个"
+        },
+        {
+          "name": "龙蝇雕塑",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/4/43/Dragonfly_Figure_%28Marble%29.png/32px-Dragonfly_Figure_%28Marble%29.png",
+          "quantity": "1 个"
+        },
+        {
+          "name": "岩浆虫卵",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/7/71/Lavae_Egg.png/32px-Lavae_Egg.png",
+          "quantity": "1 个（33%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "27500"
+        ],
+        "伤害": [
+          "150（暴怒时300）",
+          "150×3（三连拍）"
+        ],
+        "攻击间隔": [
+          "4（暴怒时3）"
+        ],
+        "攻击范围": [
+          "4（暴怒时6）"
+        ],
+        "行走速度": "5",
+        "奔跑速度": "6"
+      }
+    },
+    {
+      "name": "远古先驱",
+      "href": "/wiki/%E8%BF%9C%E5%8F%A4%E5%85%88%E9%A9%B1",
+      "image": "https://huiji-public.huijistatic.com/dontstarve/uploads/c/c0/Ancient_Herald_idle.gif",
+      "drops": [
+        {
+          "name": "暗影碎布/单机版",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/9d/Dark_Tatters.png/32px-Dark_Tatters.png",
+          "quantity": "×5，"
+        },
+        {
+          "name": "噩梦燃料/单机版",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×2"
+        },
+        {
+          "name": "旋涡斗篷",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/2/29/Vortex_Cloak.png/32px-Vortex_Cloak.png",
+          "quantity": ""
+        },
+        {
+          "name": "蓝图/单机版",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/9/98/Blueprint.png/32px-Blueprint.png",
+          "quantity": ""
+        },
+        {
+          "name": "噩梦燃料/单机版",
+          "image": "https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/3/3c/Nightmare_Fuel.png/32px-Nightmare_Fuel.png",
+          "quantity": "×1（33%）"
+        }
+      ],
+      "stats": {
+        "生命值": [
+          "2000"
+        ],
+        "伤害": [
+          "50"
+        ],
+        "攻击间隔": [
+          "4"
+        ],
+        "攻击范围": [
+          "3"
+        ],
+        "理智光环": [
+          "-100/分",
+          "战斗时：-400/分"
+        ],
+        "行走速度": "2",
+        "奔跑速度": "2"
+      }
+    }
+  ]
+}

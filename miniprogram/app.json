@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/cooking/cooking",
+    "pages/boss/boss",
     "pages/logs/logs"
   ],
   "window": {
@@ -26,6 +27,12 @@
         "text": "烹饪",
         "iconPath": "images/tab-cooking.png",
         "selectedIconPath": "images/tab-cooking-active.png"
+      },
+      {
+        "pagePath": "pages/boss/boss",
+        "text": "Boss",
+        "iconPath": "images/tab-boss.png",
+        "selectedIconPath": "images/tab-boss-active.png"
       }
     ]
   },
