@@ -48,9 +48,14 @@ page {
   color: #e8d5a3;
 }
 
-/* 物品滚动区 */
+/* 物品列表区 */
 .items-scroll {
-  height: 450rpx;
+  /* 高度自适应，由外层 scroll-view 统一滚动 */
+}
+
+/* 底部留白，避免被 tab-bar 遮挡 */
+.bottom-spacer {
+  height: calc(140rpx + env(safe-area-inset-bottom));
 }
 
 /* 物品网格 */

@@ -32,53 +32,15 @@
   </view>
 
   <!-- 物品列表 -->
-  <scroll-view class="items-scroll" scroll-y wx:if="{{items.length > 0}}">
+  <view class="items-scroll" wx:if="{{items.length > 0}}">
     <view class="items-grid">
       <view class="item-cell {{selectedItem === item.name ? 'item-active' : ''}}" wx:for="{{items}}" wx:key="name" bindtap="onItemTap" data-name="{{item.name}}">
         <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
         <text class="item-name">{{item.name}}</text>
       </view>
     </view>
-  </scroll-view>
-
-  <!-- 合成配方信息 -->
-  <view class="recipe-panel" wx:if="{{recipeList.length > 0}}">
-    <view class="recipe-card" wx:for="{{recipeList}}" wx:key="name" wx:for-item="recipe">
-      <view class="recipe-header">
-        <text class="recipe-header-text">制作配方</text>
-      </view>
-
-      <!-- 材料 > 产物 -->
-      <view class="recipe-craft">
-        <view class="recipe-ingredients">
-          <view class="ingredient" wx:for="{{recipe.ingredients}}" wx:key="name" wx:for-item="ing" bindtap="onIngredientTap" data-name="{{ing.name}}">
-            <image class="ingredient-icon" src="{{ing.image}}" mode="aspectFit" />
-            <text class="ingredient-qty">{{ing.quantity}}</text>
-          </view>
-        </view>
-        <text class="recipe-arrow">▶</text>
-        <view class="recipe-result">
-          <image class="result-icon" src="{{selectedItemImage}}" mode="aspectFit" />
-          <text class="ingredient-qty">1</text>
-        </view>
-      </view>
-
-      <!-- 描述 -->
-      <text class="recipe-desc" wx:if="{{recipe.description}}">"{{recipe.description}}"</text>
-
-      <!-- 分类 & 解锁 -->
-      <view class="recipe-meta">
-        <view class="meta-item" wx:if="{{recipe.category}}">
-          <text class="meta-label">分类</text>
-          <image class="meta-icon" src="{{recipe.category.image}}" mode="aspectFit" />
-        </view>
-        <view class="meta-item" wx:if="{{recipe.unlock}}">
-          <text class="meta-label">解锁</text>
-          <image class="meta-icon" src="{{recipe.unlock.image}}" mode="aspectFit" />
-        </view>
-      </view>
-    </view>
   </view>
+
 
   <view class="bottom-spacer"></view>
   <tab-bar active="{{0}}"></tab-bar>

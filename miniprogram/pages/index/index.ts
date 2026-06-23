@@ -64,7 +64,6 @@ Component({
     onItemTap(e: any) {
       const name = e.currentTarget.dataset.name
       const item = itemsMap[name]
-      const recipeList = item ? item.recipes : []
 
       let itemImage = ''
       if (item) {
@@ -78,7 +77,11 @@ Component({
         if (found) itemImage = found.image
       }
 
-      this.setData({ selectedItem: name, selectedItemImage: itemImage, recipeList })
+      this.setData({ selectedItem: name, selectedItemImage: itemImage })
+
+      if (item) {
+        this.setData({ showPopup: true, popupItem: item })
+      }
     },
 
     onIngredientTap(e: any) {
