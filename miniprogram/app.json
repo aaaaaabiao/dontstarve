@@ -1,40 +1,26 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/cooking/cooking",
-    "pages/boss/boss",
     "pages/logs/logs"
+  ],
+  "subPackages": [
+    {
+      "root": "pkgCooking",
+      "pages": [
+        "pages/cooking/cooking"
+      ]
+    },
+    {
+      "root": "pkgBoss",
+      "pages": [
+        "pages/boss/boss"
+      ]
+    }
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "饥荒字典",
     "navigationBarBackgroundColor": "#1a1a1a"
-  },
-  "tabBar": {
-    "color": "#999999",
-    "selectedColor": "#e8d5a3",
-    "backgroundColor": "#1a1a1a",
-    "borderStyle": "black",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "制作",
-        "iconPath": "images/tab-craft.png",
-        "selectedIconPath": "images/tab-craft-active.png"
-      },
-      {
-        "pagePath": "pages/cooking/cooking",
-        "text": "烹饪",
-        "iconPath": "images/tab-cooking.png",
-        "selectedIconPath": "images/tab-cooking-active.png"
-      },
-      {
-        "pagePath": "pages/boss/boss",
-        "text": "Boss",
-        "iconPath": "images/tab-boss.png",
-        "selectedIconPath": "images/tab-boss-active.png"
-      }
-    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",

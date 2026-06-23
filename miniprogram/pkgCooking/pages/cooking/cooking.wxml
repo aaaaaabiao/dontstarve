@@ -93,4 +93,6 @@
       </view>
     </scroll-view>
   </view>
+  <view class="bottom-spacer"></view>
+  <tab-bar active="{{1}}"></tab-bar>
 </scroll-view>

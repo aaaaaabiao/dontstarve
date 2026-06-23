@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "tab-bar": "/components/tab-bar/tab-bar"
+  },
   "navigationBarTitleText": "烹饪",
   "navigationBarBackgroundColor": "#1a1a1a",
   "navigationBarTextStyle": "white"

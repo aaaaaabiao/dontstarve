@@ -17,3 +17,5 @@ node_modules/
 .idea/
 
 .aone_copilot/
+
+.claude/

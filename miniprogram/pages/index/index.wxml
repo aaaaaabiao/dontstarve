@@ -159,4 +159,5 @@
       </view>
     </scroll-view>
   </view>
+  <tab-bar active="{{0}}"></tab-bar>
 </scroll-view>

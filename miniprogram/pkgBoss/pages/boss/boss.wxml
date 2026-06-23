@@ -1,8 +1,5 @@
 <!--boss.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="section-title">
-    <text class="section-title-text">巨兽</text>
-  </view>
 
   <!-- Boss 网格 -->
   <view class="boss-grid">
@@ -75,4 +72,6 @@
       </view>
     </scroll-view>
   </view>
+  <view class="bottom-spacer"></view>
+  <tab-bar active="{{2}}"></tab-bar>
 </scroll-view>

@@ -248,3 +248,7 @@ page {
   color: #e8d5a3;
   font-weight: 500;
 }
+
+.bottom-spacer {
+  height: 140rpx;
+}
