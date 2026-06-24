@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <!-- 分类图标网格 -->
+<view class="page-container">
+  <!-- 分类图标网格（固定） -->
   <view class="category-grid">
     <view
       class="category-item {{selectedIndex === index ? 'active' : ''}}"
@@ -13,12 +13,12 @@
     </view>
   </view>
 
-  <!-- 分类名称 -->
+  <!-- 分类名称（固定） -->
   <view class="section-title" wx:if="{{selectedName}}">
     <text class="section-title-text">{{selectedName}}</text>
   </view>
 
-  <!-- 子分类图标行 -->
+  <!-- 子分类图标行（固定） -->
   <view class="sub-category-row" wx:if="{{subCategories.length > 0}}">
     <view
       class="sub-category-item {{selectedSubIndex === index ? 'sub-active' : ''}}"
@@ -31,20 +31,19 @@
     </view>
   </view>
 
-  <!-- 物品列表 -->
-  <view class="items-scroll" wx:if="{{items.length > 0}}">
+  <!-- 物品列表（可滚动） -->
+  <scroll-view class="items-scroll" scroll-y type="list" wx:if="{{items.length > 0}}">
     <view class="items-grid">
       <view class="item-cell {{selectedItem === item.name ? 'item-active' : ''}}" wx:for="{{items}}" wx:key="name" bindtap="onItemTap" data-name="{{item.name}}">
         <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
         <text class="item-name">{{item.name}}</text>
       </view>
     </view>
-  </view>
+    <view class="bottom-spacer"></view>
+  </scroll-view>
 
-
-  <view class="bottom-spacer"></view>
   <tab-bar active="{{0}}"></tab-bar>
-</scroll-view>
+</view>
 
 <!-- 物品详情弹窗（移到 scroll-view 外部，避免 fixed 定位异常） -->
 <view class="popup-mask" wx:if="{{showPopup}}" bindtap="closePopup">
