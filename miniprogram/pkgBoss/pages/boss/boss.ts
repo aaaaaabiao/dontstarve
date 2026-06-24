@@ -81,6 +81,17 @@ Component({
       this.setData({ showPopup: false, popupBoss: null, phases: [], levels: [], statKeys: [] })
     },
 
+    // 广告事件
+    adLoad() {
+      console.log('Boss页原生模板广告加载成功')
+    },
+    adError(err: any) {
+      console.error('Boss页原生模板广告加载失败', err)
+    },
+    adClose() {
+      console.log('Boss页原生模板广告关闭')
+    },
+
     formatStat(val: any) {
       return formatStat(val)
     },

@@ -290,6 +290,12 @@ page {
   height: 56rpx;
 }
 
+/* 广告 */
+.popup-ad-container {
+  padding: 20rpx 0;
+  border-top: 2rpx solid rgba(232, 213, 163, 0.15);
+}
+
 /* 关闭按钮 */
 .popup-close {
   padding: 24rpx 0;

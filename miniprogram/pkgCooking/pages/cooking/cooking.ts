@@ -41,5 +41,16 @@ Component({
     closePopup() {
       this.setData({ showPopup: false, popupDish: null })
     },
+
+    // 广告事件
+    adLoad() {
+      console.log('烹饪页原生模板广告加载成功')
+    },
+    adError(err: any) {
+      console.error('烹饪页原生模板广告加载失败', err)
+    },
+    adClose() {
+      console.log('烹饪页原生模板广告关闭')
+    },
   },
 })

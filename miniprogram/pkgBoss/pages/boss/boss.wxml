@@ -66,6 +66,11 @@
         </view>
       </block>
 
+      <!-- 广告 -->
+      <view class="popup-ad-container">
+        <ad-custom unit-id="adunit-435564f902fe544d" bindload="adLoad" binderror="adError" bindclose="adClose"></ad-custom>
+      </view>
+
       <!-- 关闭 -->
       <view class="popup-close" bindtap="closePopup">
         <text class="popup-close-text">关闭</text>
