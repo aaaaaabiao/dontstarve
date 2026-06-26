@@ -26,6 +26,12 @@ page {
   color: #e8d5a3;
 }
 
+.section-hint {
+  margin-left: auto;
+  font-size: 22rpx;
+  color: rgba(232, 213, 163, 0.5);
+}
+
 /* 食谱网格 */
 .dishes-grid {
   display: grid;

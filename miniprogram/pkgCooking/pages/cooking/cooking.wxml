@@ -5,6 +5,7 @@
     <view class="section-title">
       <image class="section-title-icon" wx:if="{{group.icon}}" src="{{group.icon}}" mode="aspectFit" />
       <text class="section-title-text">{{group.title}}</text>
+      <text class="section-hint" wx:if="{{gIdx === 0}}">👇 点击料理查看配方</text>
     </view>
     <view class="dishes-grid">
       <view class="dish-cell" wx:for="{{group.dishes}}" wx:key="name" bindtap="onDishTap" data-group="{{gIdx}}" data-index="{{index}}">

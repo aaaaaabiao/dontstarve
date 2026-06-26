@@ -42,6 +42,9 @@ page {
 
 /* 分类标题 */
 .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 24rpx 30rpx 8rpx;
 }
 
@@ -49,6 +52,11 @@ page {
   font-size: 32rpx;
   font-weight: bold;
   color: #e8d5a3;
+}
+
+.section-hint {
+  font-size: 22rpx;
+  color: rgba(232, 213, 163, 0.5);
 }
 
 /* 物品列表区（填满剩余空间，内部可滚动） */

@@ -16,6 +16,7 @@
   <!-- 分类名称（固定） -->
   <view class="section-title" wx:if="{{selectedName}}">
     <text class="section-title-text">{{selectedName}}</text>
+    <text class="section-hint">👇 点击物品查看制作配方 </text>
   </view>
 
   <!-- 子分类图标行（固定） -->
