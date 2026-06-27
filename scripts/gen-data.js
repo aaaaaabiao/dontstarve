@@ -18,11 +18,16 @@ process.argv.slice(2).forEach(arg => {
 
 function resolvePath(key, defaultFile) {
   // 用户数据源的实际路径
+  const SRC_DIR = '/Users/abiao/coding/scrapers/dontstarve'
   const userPaths = {
-    'items': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_items.json',
-    'items-ds': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_sp_items.json',
-    'categories': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_categories.json',
-    'categories-ds': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_sp_categories.json',
+    'categories': path.join(SRC_DIR, 'dontstarve_categories.json'),
+    'items': path.join(SRC_DIR, 'dontstarve_items.json'),
+    'categories-ds': path.join(SRC_DIR, 'dontstarve_sp_categories.json'),
+    'items-ds': path.join(SRC_DIR, 'dontstarve_sp_items.json'),
+    'cooking': path.join(SRC_DIR, 'dontstarve_cooking.json'),
+    'cooking-ds': path.join(SRC_DIR, 'dontstarve_sp_cooking.json'),
+    'giants': path.join(SRC_DIR, 'dontstarve_giants.json'),
+    'giants-ds': path.join(SRC_DIR, 'dontstarve_sp_giants.json'),
   }
 
   if (args[key]) {
