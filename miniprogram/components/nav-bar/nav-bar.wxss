@@ -40,7 +40,7 @@
 }
 
 .switch-btn {
-  padding: 8rpx 24rpx;
+  padding: 4rpx 20rpx;
   border-radius: 28rpx;
   transition: all 0.3s ease;
 }

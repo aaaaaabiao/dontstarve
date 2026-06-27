@@ -62,8 +62,7 @@ page {
 
 /* 物品列表区（填满剩余空间，内部可滚动） */
 .items-scroll {
-  flex: 1;
-  overflow: hidden;
+  width: 100%;
 }
 
 /* 底部留白，避免被 tab-bar 遮挡 */

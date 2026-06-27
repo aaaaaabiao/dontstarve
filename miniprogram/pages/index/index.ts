@@ -16,6 +16,7 @@ Component({
     popupItem: null as any,
     popupDlcIcons: [] as any[],
     navBarTotalHeight: 64,
+    scrollHeight: 500,
     version: 'dst' as 'ds' | 'dst',
     dlcIcons,
   },
@@ -26,9 +27,34 @@ Component({
       const navBarTotalHeight = statusBarHeight + 44
       this.setData({ navBarTotalHeight })
       this.loadData()
+    },
+    ready() {
+      this.calcScrollHeight()
     }
   },
   methods: {
+    calcScrollHeight() {
+      const query = this.createSelectorQuery()
+      query.select('.category-grid').boundingClientRect()
+      query.select('.section-title').boundingClientRect()
+      query.select('.sub-category-row').boundingClientRect()
+      query.exec((res: any) => {
+        const sysInfo = wx.getSystemInfoSync()
+        const windowHeight = sysInfo.windowHeight
+        const navBarTotalHeight = this.data.navBarTotalHeight
+        const tabbarHeight = 50
+
+        let usedHeight = navBarTotalHeight + tabbarHeight
+        if (res[0]) usedHeight += res[0].height  // category-grid
+        if (res[1]) usedHeight += res[1].height  // section-title
+        if (res[2]) usedHeight += res[2].height  // sub-category-row
+
+        const scrollHeight = windowHeight - usedHeight
+        if (scrollHeight > 100) {
+          this.setData({ scrollHeight })
+        }
+      })
+    },
     loadData() {
       const ver = getVersion()
       let categories, itemsMap

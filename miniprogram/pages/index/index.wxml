@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<nav-bar title="饥荒字典" bind:versionchange="onVersionChange"></nav-bar>
+<nav-bar title="工具制作" bind:versionchange="onVersionChange"></nav-bar>
 <view class="page-container" style="padding-top: {{navBarTotalHeight}}px;">
   <!-- 分类图标网格（固定） -->
   <view class="category-grid">
@@ -34,7 +34,7 @@
   </view>
 
   <!-- 物品列表（可滚动） -->
-  <scroll-view class="items-scroll" scroll-y type="list" wx:if="{{items.length > 0}}">
+  <scroll-view class="items-scroll" scroll-y type="list" wx:if="{{items.length > 0}}" style="height: {{scrollHeight}}px;">
     <view class="items-grid">
       <view class="item-cell {{selectedItem === item.name ? 'item-active' : ''}}" wx:for="{{items}}" wx:key="name" bindtap="onItemTap" data-name="{{item.name}}">
         <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
