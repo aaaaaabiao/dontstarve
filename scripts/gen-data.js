@@ -17,7 +17,21 @@ process.argv.slice(2).forEach(arg => {
 })
 
 function resolvePath(key, defaultFile) {
-  return args[key] || path.join(rawDir, defaultFile)
+  // 用户数据源的实际路径
+  const userPaths = {
+    'items': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_items.json',
+    'items-ds': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_sp_items.json',
+    'categories': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_categories.json',
+    'categories-ds': '/Users/abiao/coding/scrapers/dontstarve/dontstarve_sp_categories.json',
+  }
+
+  if (args[key]) {
+    return args[key]
+  }
+  if (userPaths[key] && fs.existsSync(userPaths[key])) {
+    return userPaths[key]
+  }
+  return path.join(rawDir, defaultFile)
 }
 
 function readJson(filePath) {
@@ -31,6 +45,12 @@ function writeTs(dir, filename, content) {
 }
 
 // DLC 归一化：统一为 ['巨人国'] / ['海难'] / ['哈姆雷特'] 数组
+const DLC_ICON_MAP = {
+  '巨人国': 'https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/6/6d/Recipe_VANILLA_icon.png/64px-Recipe_VANILLA_icon.png',
+  '海难': 'https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/b/b7/Recipe_SHIPWRECKED_icon.png/64px-Recipe_SHIPWRECKED_icon.png',
+  '哈姆雷特': 'https://huiji-thumb.huijistatic.com/dontstarve/uploads/thumb/a/ab/Recipe_PORKLAND_icon.png/64px-Recipe_PORKLAND_icon.png',
+}
+
 function normalizeDlc(dlc) {
   if (!dlc) return []
   if (typeof dlc === 'string') {
@@ -49,6 +69,11 @@ function normalizeDlc(dlc) {
   return []
 }
 
+// 将 dlc 名称数组转为图标 URL 数组
+function dlcIcons(dlc) {
+  return normalizeDlc(dlc).map(name => DLC_ICON_MAP[name]).filter(Boolean)
+}
+
 // ==================== Categories ====================
 const catRaw = readJson(resolvePath('categories', 'dontstarve_categories.json'))
 if (catRaw) {
@@ -59,46 +84,108 @@ if (catRaw) {
 // ==================== Categories DS ====================
 const catDsRaw = readJson(resolvePath('categories-ds', 'dontstarve_ds_categories.json'))
 if (catDsRaw) {
+  // 给每个列表项预计算 dlcIcons
+  const cats = catDsRaw.categories.map(cat => {
+    if (cat.items) {
+      cat.items = cat.items.map(item => {
+        item.dlcIcons = dlcIcons(item.dlc)
+        item.dlc = normalizeDlc(item.dlc)
+        return item
+      })
+    }
+    if (cat.sub_categories) {
+      cat.sub_categories = cat.sub_categories.map(sub => {
+        if (sub.items) {
+          sub.items = sub.items.map(item => {
+            item.dlcIcons = dlcIcons(item.dlc)
+            item.dlc = normalizeDlc(item.dlc)
+            return item
+          })
+        }
+        return sub
+      })
+    }
+    return cat
+  })
   writeTs(dataDir, 'categories_ds.ts',
-    'export const categories = ' + JSON.stringify(catDsRaw.categories) + ';\n')
+    'export const categories = ' + JSON.stringify(cats) + ';\n')
 }
 
-// ==================== Items ====================
+// ==================== Items (联机版) ====================
 const itemsRaw = readJson(resolvePath('items', 'dontstarve_items.json'))
-if (itemsRaw) {
+if (itemsRaw && catRaw) {
+  // 收集分类中引用的物品名称
+  const catItemNames = new Set()
+  catRaw.categories.forEach(cat => {
+    ;(cat.items || []).forEach(item => catItemNames.add(item.name))
+    ;(cat.sub_categories || []).forEach(sub => {
+      ;(sub.items || []).forEach(item => catItemNames.add(item.name))
+    })
+  })
+
+  // 精简配方字段
+  const slimRecipe = (r) => ({
+    name: r.name,
+    ingredients: r.ingredients || [],
+    description: r.description || '',
+    category: r.category || null,
+    unlock: r.unlock || null,
+    crafting_station: r.crafting_station || null,
+  })
+
   const itemsMap = {}
   itemsRaw.items.forEach(item => {
-    itemsMap[item.name] = {
-      name: item.name,
-      image: item.image || '',
-      icon: item.icon || '',
-      categories: item.categories || [],
-      recipes: item.recipes || [],
-      drop_from: item.drop_from || [],
-      generated_from: item.generated_from || [],
-      dlc: normalizeDlc(item.dlc),
+    if (catItemNames.has(item.name)) {
+      itemsMap[item.name] = {
+        name: item.name,
+        icon: item.icon || '',
+        recipes: (item.recipes || []).map(slimRecipe),
+        drop_from: item.drop_from || [],
+        generated_from: item.generated_from || [],
+      }
     }
   })
+  console.log(`  联机版: ${itemsRaw.items.length} 个物品 → 保留 ${Object.keys(itemsMap).length} 个`)
   writeTs(dataDir, 'items.ts',
     'export const itemsMap: Record<string, any> = ' + JSON.stringify(itemsMap) + ';\n')
 }
 
-// ==================== Items DS ====================
-const itemsDsRaw = readJson(resolvePath('items-ds', 'dontstarve_ds_items.json'))
-if (itemsDsRaw) {
+// ==================== Items DS (单机版) ====================
+const itemsDsRaw = readJson(resolvePath('items-ds', 'dontstarve_sp_items.json'))
+if (itemsDsRaw && catDsRaw) {
+  // 收集单机版分类引用的物品名称
+  const catDsItemNames = new Set()
+  catDsRaw.categories.forEach(cat => {
+    ;(cat.items || []).forEach(item => catDsItemNames.add(item.name))
+    ;(cat.sub_categories || []).forEach(sub => {
+      ;(sub.items || []).forEach(item => catDsItemNames.add(item.name))
+    })
+  })
+
+  // 精简配方字段
+  const slimRecipe = (r) => ({
+    name: r.name,
+    ingredients: r.ingredients || [],
+    description: r.description || '',
+    category: r.category || null,
+    unlock: r.unlock || null,
+    crafting_station: r.crafting_station || null,
+  })
+
   const itemsDsMap = {}
   itemsDsRaw.items.forEach(item => {
-    itemsDsMap[item.name] = {
-      name: item.name,
-      image: item.image || '',
-      icon: item.icon || '',
-      categories: item.categories || [],
-      recipes: item.recipes || [],
-      drop_from: item.drop_from || [],
-      generated_from: item.generated_from || [],
-      dlc: normalizeDlc(item.dlc),
+    if (catDsItemNames.has(item.name)) {
+      itemsDsMap[item.name] = {
+        name: item.name,
+        icon: item.icon || '',
+        recipes: (item.recipes || []).map(slimRecipe),
+        drop_from: item.drop_from || [],
+        generated_from: item.generated_from || [],
+        dlc: item.dlc || [],
+      }
     }
   })
+  console.log(`  单机版: ${itemsDsRaw.items.length} 个物品 → 保留 ${Object.keys(itemsDsMap).length} 个`)
   writeTs(dataDir, 'items_ds.ts',
     'export const itemsMap: Record<string, any> = ' + JSON.stringify(itemsDsMap) + ';\n')
 }
@@ -119,6 +206,7 @@ if (cookDsRaw) {
       d.image = d.icon || d.image
     }
     d.dlc = normalizeDlc(d.dlc)
+    d.dlcIcons = dlcIcons(d.dlc)
     return d
   })
   writeTs(cookingDataDir, 'cooking_ds.ts',
@@ -143,6 +231,7 @@ if (giantsDsRaw) {
     return true
   }).map(g => {
     g.dlc = normalizeDlc(g.dlc)
+    g.dlcIcons = dlcIcons(g.dlc)
     return g
   })
   writeTs(bossDataDir, 'giants_ds.ts',

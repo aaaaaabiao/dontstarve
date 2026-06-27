@@ -13,6 +13,9 @@
       <view class="dish-cell" wx:for="{{group.dishes}}" wx:key="name" bindtap="onDishTap" data-group="{{gIdx}}" data-index="{{index}}">
         <image class="dish-icon" src="{{item.icon || item.image}}" mode="aspectFit" />
         <text class="dish-name">{{item.name}}</text>
+        <view class="dish-dlc-icons" wx:if="{{item.dlcIcons && item.dlcIcons.length > 0}}">
+          <image class="dish-dlc-icon" wx:for="{{item.dlcIcons}}" wx:key="*this" src="{{item}}" mode="aspectFit" />
+        </view>
       </view>
     </view>
   </block>

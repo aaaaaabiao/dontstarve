@@ -7,6 +7,9 @@
     <view class="boss-cell" wx:for="{{giants}}" wx:key="name" bindtap="onBossTap" data-index="{{index}}">
       <image class="boss-icon" src="{{item.image}}" mode="aspectFit" />
       <text class="boss-name">{{item.name}}</text>
+      <view class="boss-dlc-icons" wx:if="{{item.dlcIcons && item.dlcIcons.length > 0}}">
+        <image class="boss-dlc-icon" wx:for="{{item.dlcIcons}}" wx:key="*this" src="{{item}}" mode="aspectFit" />
+      </view>
     </view>
   </view>
 

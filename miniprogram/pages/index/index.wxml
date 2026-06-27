@@ -39,6 +39,9 @@
       <view class="item-cell {{selectedItem === item.name ? 'item-active' : ''}}" wx:for="{{items}}" wx:key="name" bindtap="onItemTap" data-name="{{item.name}}">
         <image class="item-icon" src="{{item.image}}" mode="aspectFit" />
         <text class="item-name">{{item.name}}</text>
+        <view class="item-dlc-icons" wx:if="{{item.dlcIcons && item.dlcIcons.length > 0}}">
+          <image class="item-dlc-icon" wx:for="{{item.dlcIcons}}" wx:key="*this" src="{{item}}" mode="aspectFit" />
+        </view>
       </view>
     </view>
     <view class="bottom-spacer"></view>
@@ -60,16 +63,15 @@
       </view>
     </view>
     <view class="popup-image-wrap">
-      <image class="popup-image" src="{{popupItem.image}}" mode="aspectFit" />
-      <image class="popup-icon" src="{{popupItem.icon}}" mode="aspectFit" wx:if="{{popupItem.icon}}" />
+      <image class="popup-image" src="{{popupItem.icon}}" mode="aspectFit" />
     </view>
 
     <!-- 制作配方 -->
-    <block wx:if="{{popupItem.recipes.length > 0}}">
+    <block wx:if="{{recipeList.length > 0}}">
       <view class="popup-section-header">
         <text class="popup-section-title">制作配方</text>
       </view>
-      <view wx:for="{{popupItem.recipes}}" wx:key="name" wx:for-item="pr">
+      <view wx:for="{{recipeList}}" wx:key="name" wx:for-item="pr">
         <view class="popup-recipe-craft">
           <view class="popup-ingredients">
             <view class="popup-ing" wx:for="{{pr.ingredients}}" wx:key="name" wx:for-item="pi" bindtap="onPopupIngredientTap" data-name="{{pi.name}}">
@@ -79,7 +81,7 @@
           </view>
           <text class="popup-recipe-arrow">▶</text>
           <view class="popup-ing">
-            <image class="popup-ing-icon" src="{{popupItem.icon || popupItem.image}}" mode="aspectFit" />
+            <image class="popup-ing-icon" src="{{popupItem.icon}}" mode="aspectFit" />
             <text class="popup-ing-qty">1</text>
           </view>
         </view>

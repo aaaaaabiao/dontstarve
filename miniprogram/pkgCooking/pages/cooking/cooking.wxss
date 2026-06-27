@@ -41,11 +41,25 @@ page {
 }
 
 .dish-cell {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 12rpx 4rpx;
   border-radius: 8rpx;
+}
+
+.dish-dlc-icons {
+  position: absolute;
+  top: 4rpx;
+  right: 4rpx;
+  display: flex;
+  gap: 2rpx;
+}
+
+.dish-dlc-icon {
+  width: 28rpx;
+  height: 28rpx;
 }
 
 .dish-cell:active {

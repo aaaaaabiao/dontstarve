@@ -11,7 +11,6 @@ Component({
     subCategories: [] as any[],
     selectedSubIndex: -1,
     selectedItem: '',
-    selectedItemImage: '',
     recipeList: [] as any[],
     showPopup: false,
     popupItem: null as any,
@@ -63,7 +62,6 @@ Component({
         subCategories: [],
         selectedSubIndex: -1,
         selectedItem: '',
-        selectedItemImage: '',
         recipeList: [],
       }
 
@@ -84,28 +82,27 @@ Component({
         selectedSubIndex: index,
         items: sub.items || [],
         selectedItem: '',
-        selectedItemImage: '',
         recipeList: [],
       })
+    },
+
+    // 从 itemsMap 中查找物品的 recipes
+    findItemRecipes(name: string) {
+      const item = this.data.itemsMap[name]
+      return item?.recipes || []
     },
 
     onItemTap(e: any) {
       const name = e.currentTarget.dataset.name
       const item = this.data.itemsMap[name]
 
-      let itemImage = ''
-      if (item) {
-        itemImage = item.image
-      } else {
-        const allItems = [
-          ...this.data.items,
-          ...this.data.subCategories.reduce((acc: any[], sub: any) => acc.concat(sub.items || []), [])
-        ]
-        const found = allItems.find((it: any) => it.name === name)
-        if (found) itemImage = found.image
-      }
+      // 从分类数据中查找 recipes
+      const recipes = this.findItemRecipes(name)
 
-      this.setData({ selectedItem: name, selectedItemImage: itemImage })
+      this.setData({
+        selectedItem: name,
+        recipeList: recipes
+      })
 
       if (item) {
         // Populate DLC icons for single-player mode

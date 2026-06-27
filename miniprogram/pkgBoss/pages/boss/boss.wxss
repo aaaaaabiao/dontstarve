@@ -53,6 +53,17 @@ page {
   text-align: center;
 }
 
+.boss-dlc-icons {
+  display: flex;
+  gap: 4rpx;
+  margin-top: 8rpx;
+}
+
+.boss-dlc-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
 /* ==================== 弹窗 ==================== */
 .popup-mask {
   position: fixed;
