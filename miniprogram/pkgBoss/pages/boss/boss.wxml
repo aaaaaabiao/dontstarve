@@ -15,7 +15,12 @@
     <scroll-view class="popup-container" scroll-y catchtap="">
       <!-- 名称 -->
       <view class="popup-header">
-        <text class="popup-title">{{popupBoss.name}}</text>
+        <view class="popup-title-row">
+          <text class="popup-title">{{popupBoss.name}}</text>
+          <view class="dlc-icons" wx:if="{{popupDlcIcons.length > 0}}">
+            <image class="dlc-icon" wx:for="{{popupDlcIcons}}" wx:key="*this" src="{{item}}" mode="aspectFit" />
+          </view>
+        </view>
       </view>
 
       <!-- 阶段切换 -->

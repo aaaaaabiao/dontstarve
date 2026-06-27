@@ -1,5 +1,6 @@
 // index.ts
 import { getVersion } from '../../data/version'
+import { dlcIcons } from '../../data/dlc-icons'
 
 Component({
   data: {
@@ -14,7 +15,10 @@ Component({
     recipeList: [] as any[],
     showPopup: false,
     popupItem: null as any,
+    popupDlcIcons: [] as any[],
     navBarTotalHeight: 64,
+    version: 'dst' as 'ds' | 'dst',
+    dlcIcons,
   },
   lifetimes: {
     attached() {
@@ -39,7 +43,7 @@ Component({
         itemsMap = require('../../data/items').itemsMap
       }
 
-      this.setData({ categories, itemsMap })
+      this.setData({ categories, itemsMap, version: ver })
       this.onCategoryTap({ currentTarget: { dataset: { index: 1 } } })
     },
 
@@ -104,7 +108,10 @@ Component({
       this.setData({ selectedItem: name, selectedItemImage: itemImage })
 
       if (item) {
-        this.setData({ showPopup: true, popupItem: item })
+        // Populate DLC icons for single-player mode
+        const popupDlcIcons = this.data.version === 'ds' && item.dlc ?
+          item.dlc.map((dlcName: string) => dlcIcons[dlcName]).filter(Boolean) : []
+        this.setData({ showPopup: true, popupItem: item, popupDlcIcons })
       }
     },
 

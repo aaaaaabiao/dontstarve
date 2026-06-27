@@ -296,6 +296,23 @@ page {
   color: #e8d5a3;
 }
 
+.popup-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+}
+
+.dlc-icons {
+  display: flex;
+  gap: 8rpx;
+}
+
+.dlc-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
 .popup-image-wrap {
   display: flex;
   flex-direction: column;

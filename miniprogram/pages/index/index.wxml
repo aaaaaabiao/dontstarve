@@ -52,7 +52,12 @@
   <scroll-view class="popup-container" scroll-y catchtap="">
     <!-- 物品名称 + 图片 -->
     <view class="popup-header">
-      <text class="popup-title">{{popupItem.name}}</text>
+      <view class="popup-title-row">
+        <text class="popup-title">{{popupItem.name}}</text>
+        <view class="dlc-icons" wx:if="{{popupDlcIcons.length > 0}}">
+          <image class="dlc-icon" wx:for="{{popupDlcIcons}}" wx:key="*this" src="{{item}}" mode="aspectFit" />
+        </view>
+      </view>
     </view>
     <view class="popup-image-wrap">
       <image class="popup-image" src="{{popupItem.image}}" mode="aspectFit" />

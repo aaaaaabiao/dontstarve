@@ -1,5 +1,6 @@
 import { getVersion } from '../../../data/version'
 import { giants as giantsDst } from '../../data/giants'
+import { dlcIcons } from '../../../data/dlc-icons'
 
 function getStatKeys(stats: any): string[] {
   return ['生命值', '伤害', '理智光环'].filter(k => stats && stats[k] !== undefined)
@@ -15,6 +16,7 @@ Component({
     giants: [] as any[],
     showPopup: false,
     popupBoss: null as any,
+    popupDlcIcons: [] as any[],
     phases: [] as any[],
     selectedPhase: 0,
     levels: [] as any[],
@@ -55,7 +57,17 @@ Component({
       if (!boss) return
 
       const phases = boss.phases || []
-      this.setData({ showPopup: true, popupBoss: boss, phases, selectedPhase: 0, selectedLevel: 0 })
+      const popupDlcIcons = boss.dlc ?
+        boss.dlc.map((dlcName: string) => dlcIcons[dlcName]).filter(Boolean) : []
+
+      this.setData({
+        showPopup: true,
+        popupBoss: boss,
+        popupDlcIcons,
+        phases,
+        selectedPhase: 0,
+        selectedLevel: 0
+      })
 
       if (phases.length > 0) {
         this.applyPhase(0)

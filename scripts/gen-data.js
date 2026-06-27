@@ -30,6 +30,25 @@ function writeTs(dir, filename, content) {
   fs.writeFileSync(path.join(dir, filename), content)
 }
 
+// DLC 归一化：统一为 ['巨人国'] / ['海难'] / ['哈姆雷特'] 数组
+function normalizeDlc(dlc) {
+  if (!dlc) return []
+  if (typeof dlc === 'string') {
+    if (dlc === '饥荒') return []
+    const match = dlc.match(/：(.+)/)
+    if (match) {
+      let name = match[1]
+      if (name === '猪镇') name = '哈姆雷特'
+      return [name]
+    }
+    return []
+  }
+  if (Array.isArray(dlc)) {
+    return dlc.map(d => d === '猪镇' ? '哈姆雷特' : d)
+  }
+  return []
+}
+
 // ==================== Categories ====================
 const catRaw = readJson(resolvePath('categories', 'dontstarve_categories.json'))
 if (catRaw) {
@@ -57,6 +76,7 @@ if (itemsRaw) {
       recipes: item.recipes || [],
       drop_from: item.drop_from || [],
       generated_from: item.generated_from || [],
+      dlc: normalizeDlc(item.dlc),
     }
   })
   writeTs(dataDir, 'items.ts',
@@ -76,6 +96,7 @@ if (itemsDsRaw) {
       recipes: item.recipes || [],
       drop_from: item.drop_from || [],
       generated_from: item.generated_from || [],
+      dlc: normalizeDlc(item.dlc),
     }
   })
   writeTs(dataDir, 'items_ds.ts',
@@ -97,6 +118,7 @@ if (cookDsRaw) {
     if (!d.image || d.image.includes('Inventory_slot_background')) {
       d.image = d.icon || d.image
     }
+    d.dlc = normalizeDlc(d.dlc)
     return d
   })
   writeTs(cookingDataDir, 'cooking_ds.ts',
@@ -119,6 +141,9 @@ if (giantsDsRaw) {
     if (seen.has(g.name)) return false
     seen.add(g.name)
     return true
+  }).map(g => {
+    g.dlc = normalizeDlc(g.dlc)
+    return g
   })
   writeTs(bossDataDir, 'giants_ds.ts',
     'export const giants: any[] = ' + JSON.stringify(giantsDs) + ';\n')

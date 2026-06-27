@@ -1,5 +1,6 @@
 import { getVersion } from '../../../data/version'
 import { dishes as dishesDst } from '../../data/cooking'
+import { dlcIcons } from '../../../data/dlc-icons'
 
 function classifyDishes(list: any[]) {
   const groups: Record<string, any[]> = { hunger: [], health: [], sanity: [], other: [] }
@@ -26,6 +27,7 @@ Component({
     groups: [] as any[],
     showPopup: false,
     popupDish: null as any,
+    popupDlcIcons: [] as any[],
     navBarTotalHeight: 64,
   },
   lifetimes: {
@@ -57,7 +59,11 @@ Component({
       const { group, index } = e.currentTarget.dataset
       const dish = this.data.groups[group]?.dishes[index]
       if (!dish) return
-      this.setData({ showPopup: true, popupDish: dish })
+
+      const popupDlcIcons = dish.dlc ?
+        dish.dlc.map((dlcName: string) => dlcIcons[dlcName]).filter(Boolean) : []
+
+      this.setData({ showPopup: true, popupDish: dish, popupDlcIcons })
     },
     closePopup() {
       this.setData({ showPopup: false, popupDish: null })
