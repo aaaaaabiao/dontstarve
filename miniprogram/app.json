@@ -18,6 +18,7 @@
     }
   ],
   "window": {
+    "navigationStyle": "custom",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "饥荒字典",
     "navigationBarBackgroundColor": "#1a1a1a"

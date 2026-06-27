@@ -1,6 +1,5 @@
 // index.ts
-import { categories } from '../../data/categories'
-import { itemsMap } from '../../data/items'
+import { getVersion } from '../../data/version'
 
 Component({
   data: {
@@ -15,17 +14,42 @@ Component({
     recipeList: [] as any[],
     showPopup: false,
     popupItem: null as any,
+    navBarTotalHeight: 64,
   },
   lifetimes: {
     attached() {
-      this.setData({ categories })
-      this.onCategoryTap({ currentTarget: { dataset: { index: 1 } } })
+      const sysInfo = wx.getSystemInfoSync()
+      const statusBarHeight = sysInfo.statusBarHeight || 20
+      const navBarTotalHeight = statusBarHeight + 44
+      this.setData({ navBarTotalHeight })
+      this.loadData()
     }
   },
   methods: {
+    loadData() {
+      const ver = getVersion()
+      let categories, itemsMap
+
+      if (ver === 'ds') {
+        const dsData = require('../../data/categories_ds')
+        categories = dsData.categories
+        itemsMap = require('../../data/items_ds').itemsMap
+      } else {
+        categories = require('../../data/categories').categories
+        itemsMap = require('../../data/items').itemsMap
+      }
+
+      this.setData({ categories, itemsMap })
+      this.onCategoryTap({ currentTarget: { dataset: { index: 1 } } })
+    },
+
+    onVersionChange() {
+      this.loadData()
+    },
+
     onCategoryTap(e: any) {
       const index = e.currentTarget.dataset.index
-      const category = categories[index]
+      const category = this.data.categories[index]
       if (!category) return
 
       const data: any = {
@@ -63,7 +87,7 @@ Component({
 
     onItemTap(e: any) {
       const name = e.currentTarget.dataset.name
-      const item = itemsMap[name]
+      const item = this.data.itemsMap[name]
 
       let itemImage = ''
       if (item) {
@@ -87,7 +111,7 @@ Component({
     onIngredientTap(e: any) {
       const name = e.currentTarget.dataset.name
       if (!name) return
-      const item = itemsMap[name]
+      const item = this.data.itemsMap[name]
       if (!item) {
         wx.showToast({ title: '未找到该物品信息', icon: 'none' })
         return
@@ -102,7 +126,7 @@ Component({
     onPopupIngredientTap(e: any) {
       const name = e.currentTarget.dataset.name
       if (!name) return
-      const item = itemsMap[name]
+      const item = this.data.itemsMap[name]
       if (!item) {
         wx.showToast({ title: '未找到该物品信息', icon: 'none' })
         return

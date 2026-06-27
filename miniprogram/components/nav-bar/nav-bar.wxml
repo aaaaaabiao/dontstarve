@@ -1,0 +1,30 @@
+<view class="nav-bar-wrapper">
+  <!-- 状态栏占位 -->
+  <view class="status-bar" style="height: {{statusBarHeight}}px;"></view>
+
+  <!-- 导航栏主体 -->
+  <view class="nav-bar-content" style="height: {{navBarHeight}}px;">
+    <view class="nav-left">
+      <text class="nav-title">{{title}}</text>
+
+      <!-- 版本切换按钮 -->
+      <view class="version-switch">
+      <view
+          class="switch-btn {{version === 'dst' ? 'active' : ''}}"
+          bindtap="onVersionTap"
+          data-version="dst"
+        >
+          <text>联机</text>
+        </view>
+        <view
+          class="switch-btn {{version === 'ds' ? 'active' : ''}}"
+          bindtap="onVersionTap"
+          data-version="ds"
+        >
+          <text>单机</text>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+</view>

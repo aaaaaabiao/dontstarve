@@ -1,4 +1,5 @@
-import { giants } from '../../data/giants'
+import { getVersion } from '../../../data/version'
+import { giants as giantsDst } from '../../data/giants'
 
 function getStatKeys(stats: any): string[] {
   return ['生命值', '伤害', '理智光环'].filter(k => stats && stats[k] !== undefined)
@@ -21,13 +22,33 @@ Component({
     currentStats: {} as any,
     statKeys: [] as string[],
     currentImage: '',
+    navBarTotalHeight: 64,
   },
   lifetimes: {
     attached() {
-      this.setData({ giants })
+      const sysInfo = wx.getSystemInfoSync()
+      const statusBarHeight = sysInfo.statusBarHeight || 20
+      const navBarTotalHeight = statusBarHeight + 44
+      this.setData({ navBarTotalHeight })
+      this.loadGiants()
     }
   },
   methods: {
+    loadGiants() {
+      const version = getVersion()
+      let giants
+      if (version === 'ds') {
+        giants = require('../../data/giants_ds').giants
+      } else {
+        giants = giantsDst
+      }
+      this.setData({ giants })
+    },
+
+    onVersionChange() {
+      this.loadGiants()
+    },
+
     onBossTap(e: any) {
       const index = e.currentTarget.dataset.index
       const boss = this.data.giants[index]

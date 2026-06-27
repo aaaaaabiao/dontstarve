@@ -1,4 +1,5 @@
-import { dishes } from '../../data/cooking'
+import { getVersion } from '../../../data/version'
+import { dishes as dishesDst } from '../../data/cooking'
 
 function classifyDishes(list: any[]) {
   const groups: Record<string, any[]> = { hunger: [], health: [], sanity: [], other: [] }
@@ -25,13 +26,33 @@ Component({
     groups: [] as any[],
     showPopup: false,
     popupDish: null as any,
+    navBarTotalHeight: 64,
   },
   lifetimes: {
     attached() {
-      this.setData({ groups: classifyDishes(dishes) })
+      const sysInfo = wx.getSystemInfoSync()
+      const statusBarHeight = sysInfo.statusBarHeight || 20
+      const navBarTotalHeight = statusBarHeight + 44
+      this.setData({ navBarTotalHeight })
+      this.loadDishes()
     }
   },
   methods: {
+    loadDishes() {
+      const version = getVersion()
+      let dishes
+      if (version === 'ds') {
+        dishes = require('../../data/cooking_ds').dishes
+      } else {
+        dishes = dishesDst
+      }
+      this.setData({ groups: classifyDishes(dishes) })
+    },
+
+    onVersionChange() {
+      this.loadDishes()
+    },
+
     onDishTap(e: any) {
       const { group, index } = e.currentTarget.dataset
       const dish = this.data.groups[group]?.dishes[index]

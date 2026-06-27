@@ -9,6 +9,7 @@ page {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding-top: var(--status-bar-height, 20px);
 }
 
 /* 分类网格 */

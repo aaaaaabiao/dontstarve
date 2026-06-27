@@ -1,5 +1,6 @@
 <!--boss.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
+<nav-bar title="Boss图鉴" bind:versionchange="onVersionChange"></nav-bar>
+<scroll-view class="scrollarea" scroll-y type="list" style="padding-top: {{navBarTotalHeight}}px;">
 
   <!-- Boss 网格 -->
   <view class="boss-grid">

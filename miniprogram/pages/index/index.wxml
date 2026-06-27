@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<view class="page-container">
+<nav-bar title="饥荒字典" bind:versionchange="onVersionChange"></nav-bar>
+<view class="page-container" style="padding-top: {{navBarTotalHeight}}px;">
   <!-- 分类图标网格（固定） -->
   <view class="category-grid">
     <view

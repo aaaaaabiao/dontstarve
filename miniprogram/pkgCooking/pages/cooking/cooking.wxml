@@ -1,5 +1,7 @@
 <!--cooking.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
+<nav-bar title="烹饪食谱" bind:versionchange="onVersionChange"></nav-bar>
+<scroll-view class="scrollarea" scroll-y type="list" style="padding-top: {{navBarTotalHeight}}px;">
+
   <!-- 分组食谱 -->
   <block wx:for="{{groups}}" wx:key="title" wx:for-item="group" wx:for-index="gIdx">
     <view class="section-title">
